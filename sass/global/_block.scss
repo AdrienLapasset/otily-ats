@@ -11,4 +11,18 @@
       width: 283px;
     }
   }
+  &--se-faire-rappeler {
+    background-color: $green;
+    color: white;
+    inline-size: fit-content;
+    max-width: 480px;
+    .row {
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    h2 {
+      inline-size: fit-content;
+      margin-left: 15px;
+    }
+  }
 }

@@ -18,3 +18,12 @@
   margin-top: 10px;
   font-weight: 700;
 }
+
+.g-no-shadow {
+  box-shadow: none !important;
+}
+
+.g-yellow-icon {
+  background-color: $yellow;
+  border-radius: 50%;
+}

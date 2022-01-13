@@ -1,0 +1,18 @@
+.g-contact {
+  background: linear-gradient(0deg, rgba(3, 86, 92, 0.5), rgba(3, 86, 92, 0.5)),
+    url("../assets/imgs/conseiller.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px 40px;
+  .g-yellow-icon {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+  }
+  .btn {
+    padding: 10px 40px;
+    margin-bottom: 15px;
+  }
+}
