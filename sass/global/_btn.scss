@@ -1,0 +1,20 @@
+.btn {
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: $red;
+  font-weight: 700;
+  font-size: 22px;
+  padding: 0 20px;
+  &:hover {
+    background-color: $red;
+  }
+  img {
+    max-height: 30px;
+    max-width: 30px;
+    margin-left: 30px;
+  }
+  .btn-primary {
+  }
+}

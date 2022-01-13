@@ -1,7 +1,7 @@
 // Colors
-$blue: #292757;
-$blue-light: #00aff2;
-$red: #ff4d03;
+$green: #03565c;
+$light-orange: #f1dbc9;
+$red: #ec4b54;
 
 // Breakpoints
 $xs: 0;
@@ -10,6 +10,8 @@ $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 $xxl: 1400px;
+
+$baseBorderRadius: 25px;
 
 // Media breakpoints mixin
 @mixin media-breakpoint-up($breakpoints) {
