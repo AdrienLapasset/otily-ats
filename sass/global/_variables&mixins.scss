@@ -13,6 +13,8 @@ $xxl: 1400px;
 
 $baseBorderRadius: 25px;
 
+$bold: 700;
+
 // Media breakpoints mixin
 @mixin media-breakpoint-up($breakpoints) {
   @media (min-width: $breakpoints) {

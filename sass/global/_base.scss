@@ -14,3 +14,13 @@ a {
 button:focus {
   outline: none;
 }
+
+ul {
+  padding-left: 0;
+  margin-top: 25px;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 10px;
+}

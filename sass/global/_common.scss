@@ -5,3 +5,16 @@
     font-size: 30px;
   }
 }
+
+.g-tag {
+  height: 30px;
+  border-radius: 5px;
+  background-color: #03565c;
+  color: white;
+  inline-size: fit-content;
+  padding: 5px 20px 5px 20px;
+  align-content: center;
+  display: grid;
+  margin-top: 10px;
+  font-weight: $bold;
+}
