@@ -1,37 +1,41 @@
 $(document).ready(function () {
 
   var step = 1
+  const stepsLength = 6
+  const progressStep = 100 / stepsLength
   const bez = [.25, .8, .25, 1]
   initStep()
 
   function initStep() {
     $("#step1").css({ "display": "flex", "opacity": "1", "left": "0px" });
     $("#prevBtn").css({ "visibility": "hidden" });
+    $("#progress").css("width", progressStep * step + "%");
   }
 
   $("#nextBtn").click(function () {
     if (step < 6) {
       step++
-      nextStep(step)
+      handleStep(step)
     }
   })
 
   $("#prevBtn").click(function () {
     step--
-    prevStep(step)
+    handleStep(step)
   })
 
-  function nextStep(step) {
-    if (step === 2) {
-      animateNext(step);
-      $("#prevBtn").css({ "visibility": "visible" });
-    }
-  }
-
-  function prevStep(step) {
+  function handleStep(step) {
+    $("#progress").css("width", progressStep * step + "%");
+    animatePrev(step)
+    animateNext(step);
     if (step === 1) {
       $("#prevBtn").css({ "visibility": "hidden" });
-      animatePrev(step)
+    }
+    if (step === 2) {
+      $("#prevBtn").css({ "visibility": "visible" });
+    }
+    if (step === 6) {
+      $("#navContainer").hide()
     }
   }
 
