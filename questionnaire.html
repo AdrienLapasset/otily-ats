@@ -13,8 +13,99 @@
 <body>
   <header></header>
 
-  <main>
-    questionnaire
+  <main class="questionnaire">
+
+    <div class="container">
+      <div class="block">
+        <h1>Quelle école est faite pour toi ?</h1>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+
+        <form id="questionnaireForm">
+
+          <!-- Step 1 -->
+          <section class="step-container" id="step1">
+            <h2 class="g-title">Quel diplôme souhaitez-vous péparer ?</h2>
+            <h3 class="g-title g-title--sm">Quel diplôme souhaitez-vous péparer ?</h3>
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <label class="questionnaire__radio">
+                  <input type="radio" name="status">
+                  <span>BTS</span>
+                </label>
+              </div>
+              <div class="col-12 col-lg-4">
+                <label class="questionnaire__radio">
+                  <input type="radio" name="status">
+                  <span>DUT</span>
+                </label>
+              </div>
+              <div class="col-12 col-lg-4">
+                <label class="questionnaire__radio">
+                  <input type="radio" name="status">
+                  <span>Prépa</span>
+                </label>
+              </div>
+            </div>
+            <h3 class="g-title g-title--sm">Quel diplôme souhaitez-vous péparer ?</h3>
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <label class="questionnaire__radio">
+                  <input type="radio" name="status">
+                  <span>BTS</span>
+                </label>
+              </div>
+              <div class="col-12 col-lg-4">
+                <label class="questionnaire__radio">
+                  <input type="radio" name="status">
+                  <span>DUT</span>
+                </label>
+              </div>
+              <div class="col-12 col-lg-4">
+                <label class="questionnaire__radio">
+                  <input type="radio" name="status">
+                  <span>Prépa</span>
+                </label>
+              </div>
+              <div class="col-12 col-lg-4">
+                <label class="questionnaire__radio">
+                  <input type="radio" name="status">
+                  <span>Prépa</span>
+                </label>
+              </div>
+            </div>
+          </section>
+
+          <!-- Step 2 -->
+          <section class="step-container" id="step2">
+            <h2 class="g-title">Quel diplôme souhaitez-vous péparer ?</h2>
+            <h3 class="g-title g-title--sm">Quel diplôme souhaitez-vous péparer ?</h3>
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <label class="questionnaire__radio">
+                  <input type="radio" name="status">
+                  <span>BTS</span>
+                </label>
+              </div>
+          </section>
+
+          <div class="d-flex mt-5">
+            <button type="button" class="nav-btn" id="prevBtn">
+              <img src="assets/icons/form-arrow-prev.svg" alt="">
+              Précédent
+            </button>
+            <button type="button" class="nav-btn" id="nextBtn">
+              Suivant
+              <img src="assets/icons/form-arrow-next.svg" alt="">
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+
   </main>
 
   <footer></footer>

@@ -1,0 +1,118 @@
+.questionnaire {
+  .block {
+    text-align: center;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    h1 {
+      color: $green;
+      font-size: 50px;
+      font-weight: 700;
+      padding: 40px 0;
+    }
+    .progress-bar {
+      background: rgba(196, 196, 196, 0.6);
+      height: 13px;
+      width: 100%;
+      .progress {
+        width: 30%;
+        background: $yellow;
+      }
+    }
+    .step-container {
+      width: 100%;
+      display: none;
+      opacity: 0;
+      flex-direction: column;
+      left: 20px;
+      min-height: 400px;
+      position: relative;
+    }
+    h2 {
+      margin: 40px 0;
+    }
+    form {
+      padding: 0 15px 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include media-breakpoint-up($sm) {
+        padding: 0 120px 120px;
+      }
+      h3 {
+        margin: 30px 0 15px;
+      }
+    }
+  }
+  &__radio {
+    cursor: pointer;
+    margin-bottom: 5px;
+    width: 100%;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+      border-radius: 42px;
+      font-size: 16px;
+      font-weight: 700;
+      height: 42px;
+      &:hover {
+        color: $green;
+        border-color: $green;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 20px;
+      }
+    }
+    input {
+      position: absolute;
+      opacity: 0;
+      height: 0;
+      width: 0;
+      &:checked ~ span {
+        color: white;
+        background-color: $green;
+        border-color: $green;
+      }
+      & + .error {
+        @extend %error-message;
+        position: absolute;
+        bottom: -25px;
+        left: 0px;
+        @include media-breakpoint-up(lg) {
+          left: 20px;
+        }
+      }
+    }
+  }
+  .nav-btn {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    font-weight: 700;
+    &#prevBtn {
+      border-right: 1px solid;
+      padding-right: 30px;
+    }
+    &#nextBtn {
+      padding-left: 30px;
+      color: $red;
+    }
+  }
+}
+
+%error-message {
+  color: $red;
+  opacity: 0;
+  animation: fade-in 0.4s forwards;
+  font-size: 12px;
+  @include media-breakpoint-up(lg) {
+    font-size: 14px;
+  }
+  img {
+    width: 12px;
+    position: relative;
+    top: -2px;
+    margin-right: 5px;
+  }
+}

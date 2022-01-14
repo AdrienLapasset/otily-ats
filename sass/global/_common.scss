@@ -1,6 +1,9 @@
 .g-title {
   font-weight: 700;
   font-size: 25px;
+  &--sm {
+    font-size: 18px;
+  }
   &--lg {
     font-size: 30px;
   }
