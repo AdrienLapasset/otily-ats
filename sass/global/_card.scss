@@ -1,0 +1,32 @@
+.g-card {
+  border-radius: $baseBorderRadius;
+  padding: 20px;
+  p {
+    margin-top: 5px;
+  }
+  &--green {
+    background-color: #cae1de;
+    width: 175px;
+    height: 150px;
+  }
+  &--white {
+    background-color: white;
+    align-items: center;
+    margin-top: 20px;
+    .bold {
+      font-weight: 700;
+    }
+    .icon {
+      height: 65px;
+      width: 60px;
+    }
+    .marker {
+      width: 20px;
+      padding: 0;
+    }
+    p {
+      margin-bottom: 0;
+      padding-left: 10px;
+    }
+  }
+}
