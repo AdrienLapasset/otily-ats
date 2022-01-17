@@ -1,15 +1,23 @@
 .g-card {
   border-radius: $baseBorderRadius;
   padding: 20px;
-  &--green {
-    background-color: #cae1de;
+  &__small-green {
+    background-color: $light-green;
     width: 175px;
     height: 150px;
     p {
       margin-top: 5px;
     }
   }
-  &--white {
+  &__small-orange {
+    background-color: $light-orange;
+    width: 175px;
+    height: 150px;
+    p {
+      margin-top: 5px;
+    }
+  }
+  &__school {
     background-color: white;
     align-items: center;
     margin-top: 20px;

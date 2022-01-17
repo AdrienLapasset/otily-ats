@@ -4,13 +4,11 @@
     @include media-breakpoint-up($lg) {
       padding: 65px 80px;
     }
+    @include media-breakpoint-up($xs) {
+      padding: 15px;
+    }
     .g-title {
       margin-bottom: 20px;
     }
   }
-}
-
-.ecoles-recherchees {
-  background-color: $yellow;
-  width: 100%;
 }

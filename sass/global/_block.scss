@@ -1,7 +1,7 @@
 .g-block {
   border-radius: $baseBorderRadius;
   padding: 40px;
-  &--trouver-ecole {
+  &__trouver-ecole {
     background-color: $light-orange;
     color: $green;
     h2 {
@@ -11,7 +11,7 @@
       width: 283px;
     }
   }
-  &--se-faire-rappeler {
+  &__se-faire-rappeler {
     background-color: $green;
     color: white;
     inline-size: fit-content;
@@ -23,6 +23,28 @@
     h2 {
       inline-size: fit-content;
       margin-left: 20px;
+    }
+  }
+  &__chiffres-annuaire {
+    background-color: $green;
+    color: white;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3 {
+      color: $yellow;
+    }
+    .g-yellow-icon {
+      padding: 10px;
+      width: 45px;
+      height: 45px;
+      margin-right: 15px;
+    }
+    p {
+      margin-bottom: 0;
+      font-weight: 700;
+      font-size: 22px;
     }
   }
 }
