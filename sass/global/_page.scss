@@ -1,44 +1,5 @@
 .page {
   background-color: $blue;
-  section {
-    background-color: white;
-    padding: 50px 15px;
-    @include media-breakpoint-up($lg) {
-      padding: 65px 80px;
-    }
-    &.section-shadow {
-      box-shadow: 0px -30px 10px -10px rgba(0, 0, 0, 0.05) inset;
-    }
-    &.ecoles-recherchees {
-      background-color: $yellow;
-      width: 100%;
-    }
-    .g-title {
-      margin-bottom: 20px;
-    }
-  }
-  .contact-section {
-    background: linear-gradient(
-        0deg,
-        rgba(3, 86, 92, 0.5),
-        rgba(3, 86, 92, 0.5)
-      ),
-      url("../assets/imgs/conseiller.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 10px 40px;
-    .g-yellow-icon {
-      width: 90px;
-      height: 90px;
-      padding: 10px;
-    }
-    .btn {
-      padding: 10px 40px;
-      margin-bottom: 15px;
-    }
-  }
   .hero-pub {
     background-image: url("../assets/imgs/habillage-iscod.jpg");
     height: 1000px;
@@ -47,17 +8,56 @@
     background-position: top center;
     margin-bottom: -800px;
   }
-  .formations-recherchees {
-    ul {
-      margin-top: 25px;
+  section {
+    background-color: white;
+    padding: 50px 15px;
+    @include media-breakpoint-up($lg) {
+      padding: 65px 80px;
     }
-    li {
-      margin-bottom: 10px;
+    .g-title {
+      margin-bottom: 20px;
     }
-  }
-  .orientation-info-decision {
-    .list-icon {
-      margin-right: 30px;
+    &.section-shadow {
+      box-shadow: 0px -30px 10px -10px rgba(0, 0, 0, 0.05) inset;
+    }
+    &.ecoles-recherchees {
+      background-color: $yellow;
+      width: 100%;
+    }
+    &.contact-section {
+      background: linear-gradient(
+          0deg,
+          rgba(3, 86, 92, 0.5),
+          rgba(3, 86, 92, 0.5)
+        ),
+        url("../assets/imgs/conseiller.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 10px 40px;
+      .g-yellow-icon {
+        width: 90px;
+        height: 90px;
+        padding: 10px;
+      }
+      .btn {
+        padding: 10px 40px;
+        margin-bottom: 15px;
+      }
+    }
+    &.formations-recherchees {
+      ul {
+        margin-top: 25px;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+    }
+    &.orientation-info-decision {
+      .list-icon {
+        margin-right: 30px;
+      }
     }
   }
 }
