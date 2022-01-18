@@ -1,0 +1,80 @@
+.g-title {
+  font-weight: 700;
+  font-size: 25px;
+  &--sm {
+    font-size: 18px;
+  }
+  &--lg {
+    font-size: 30px;
+  }
+}
+
+.g-tag {
+  height: 30px;
+  border-radius: 5px;
+  background-color: #03565c;
+  color: white;
+  inline-size: fit-content;
+  padding: 5px 20px 5px 20px;
+  align-content: center;
+  display: grid;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.g-no-shadow {
+  box-shadow: none !important;
+}
+
+.g-yellow-icon {
+  background-color: $yellow;
+  border-radius: 100%;
+}
+
+.ecoles-recherchees {
+  background-color: $yellow;
+  width: 100%;
+}
+
+.contact-section {
+  background: linear-gradient(0deg, rgba(3, 86, 92, 0.5), rgba(3, 86, 92, 0.5)),
+    url("../assets/imgs/conseiller.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px 40px;
+  .g-yellow-icon {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+  }
+  .btn {
+    padding: 10px 40px;
+    margin-bottom: 15px;
+  }
+}
+
+.hero-pub {
+  background-image: url("../assets/imgs/habillage-iscod.jpg");
+  height: 1000px;
+  width: 100%;
+  background-size: cover;
+  background-position: top center;
+  margin-bottom: -800px;
+}
+
+.formations-recherchees {
+  ul {
+    margin-top: 25px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+.orientation-info-decision {
+  .list-icon {
+    margin-right: 30px;
+  }
+}

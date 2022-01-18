@@ -1,0 +1,21 @@
+footer {
+  background-color: #262626;
+  color: white;
+  padding: 50px 75px;
+  h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 15px 0;
+  }
+  a {
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .sub-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 40px 40px 0px 40px;
+    text-align: center;
+    width: 100%;
+  }
+}
