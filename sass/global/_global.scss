@@ -1,3 +1,20 @@
+section {
+  background-color: white;
+  @include media-breakpoint-up($lg) {
+    padding: 65px 80px;
+  }
+  @include media-breakpoint-up($xs) {
+    padding: 50px 15px;
+  }
+  .g-title {
+    margin-bottom: 20px;
+  }
+  &.ecoles-recherchees {
+    background-color: $yellow;
+    width: 100%;
+  }
+}
+
 .g-title {
   font-weight: 700;
   font-size: 25px;
@@ -29,11 +46,6 @@
 .g-yellow-icon {
   background-color: $yellow;
   border-radius: 100%;
-}
-
-.ecoles-recherchees {
-  background-color: $yellow;
-  width: 100%;
 }
 
 .contact-section {
