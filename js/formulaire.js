@@ -10,6 +10,7 @@ $(document).ready(function () {
     $("#step1").css({ "display": "flex", "opacity": "1", "left": "0px" });
     $("#prevBtn").css({ "visibility": "hidden" });
     $("#progress").css("width", progressStep * step + "%");
+    // animateNext(5);
   }
 
   $("#nextBtn").click(function () {
