@@ -1,0 +1,41 @@
+.navbar {
+  background-color: $green;
+  font-weight: 700;
+  font-size: 9px;
+  @include media-breakpoint-up($sm) {
+    font-size: 16px;
+  }
+  @include media-breakpoint-up($xxl) {
+    font-size: 20px;
+  }
+  .navbar-collapse {
+    justify-content: center;
+    .navbar-nav {
+      margin-top: 0;
+      .nav-item {
+        .nav-link {
+          color: white;
+        }
+      }
+    }
+  }
+  &__cta {
+    background-color: $yellow;
+    border-radius: 50px;
+    color: $green;
+    align-items: center;
+    display: flex;
+    padding: 3px 7px;
+    @include media-breakpoint-up($sm) {
+      height: 50px;
+      padding: 0 15px;
+    }
+    img {
+      margin-right: 10px;
+    }
+  }
+  .navbar-toggler {
+    border: none;
+    box-shadow: none;
+  }
+}
