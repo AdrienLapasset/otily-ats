@@ -38,7 +38,16 @@
 
 .g-yellow-icon {
   background-color: $yellow;
-  border-radius: 100%;
+  border-radius: 100px;
+  flex: 0 0 100px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 50px;
+  }
 }
 
 .white {
@@ -56,12 +65,14 @@
 }
 
 .g-form {
-  select,
-  input {
+  label {
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .input {
     width: 100%;
     background-color: white;
     border: none;
-    height: 50px;
     padding: 0 40px 0 10px;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -69,6 +80,15 @@
       color: $grey-dark;
       opacity: 1;
     }
+  }
+  textarea {
+    @extend .input;
+    resize: none;
+  }
+  select,
+  input {
+    height: 50px;
+    @extend .input;
   }
   select {
     background-image: url("data:image/svg+xml;utf8,<svg fill='%23797979' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
