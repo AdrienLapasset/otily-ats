@@ -24,13 +24,31 @@
     color: white;
     inline-size: fit-content;
     max-width: 480px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    @include media-breakpoint-up($md) {
+      padding: 40px;
+    }
     .row {
       align-items: center;
       margin-bottom: 20px;
     }
     h2 {
       inline-size: fit-content;
-      margin-left: 20px;
+      margin-left: 10px;
+      font-size: 18px;
+      @include media-breakpoint-up($md) {
+        font-size: 30px;
+        margin-left: 20px;
+        max-width: 290px;
+      }
+    }
+    button {
+      align-self: center;
+      @include media-breakpoint-up($sm) {
+        align-self: start;
+      }
     }
   }
   &__chiffres-annuaire {

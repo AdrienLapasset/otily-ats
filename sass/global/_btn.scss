@@ -5,10 +5,12 @@
   color: white;
   background-color: $red;
   font-weight: 700;
-  font-size: 22px;
   padding: 0 20px;
   display: flex;
   align-items: center;
+  @include media-breakpoint-up($md) {
+    font-size: 22px;
+  }
   &:hover {
     background-color: $red;
   }
