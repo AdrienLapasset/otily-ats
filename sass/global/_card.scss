@@ -1,22 +1,40 @@
 .g-card {
   border-radius: $baseBorderRadius;
   padding: 20px;
-  &__small-green {
-    background-color: $light-green;
-    width: 175px;
-    height: 150px;
+  line-height: 15px;
+  &__small {
+    width: 140px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    @include media-breakpoint-up($md) {
+      min-width: 175px;
+      min-height: 150px;
+      border-radius: $baseBorderRadius;
+      padding: 25px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    img {
+      width: 20px;
+      @include media-breakpoint-up($md) {
+        width: 35px;
+      }
+    }
     p {
-      margin-top: 5px;
+      margin: 5px;
+    }
+    &__orange {
+      background-color: $light-orange;
+    }
+    &__green {
+      background-color: $light-green;
     }
   }
-  &__small-orange {
-    background-color: $light-orange;
-    width: 175px;
-    height: 150px;
-    p {
-      margin-top: 5px;
-    }
-  }
+
   &__school {
     background-color: white;
     align-items: center;

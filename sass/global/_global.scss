@@ -1,11 +1,17 @@
 .g-title {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 18px;
+  @include media-breakpoint-up($md) {
+    font-size: 25px;
+  }
   &--sm {
     font-size: 18px;
   }
   &--lg {
-    font-size: 30px;
+    font-size: 18px;
+    @include media-breakpoint-up($md) {
+      font-size: 30px;
+    }
   }
   &--xl {
     font-size: 42px;
@@ -14,16 +20,20 @@
 }
 
 .g-tag {
-  height: 30px;
+  max-height: 15px;
   border-radius: 5px;
   background-color: #03565c;
   color: white;
   inline-size: fit-content;
   padding: 5px 20px 5px 20px;
-  align-content: center;
-  display: grid;
+  align-items: center;
+  display: flex;
   margin-top: 10px;
   font-weight: 700;
+  flex-wrap: nowrap;
+  @include media-breakpoint-up($md) {
+    max-height: 30px;
+  }
 }
 
 .g-yellow-icon {
