@@ -7,6 +7,10 @@
   &--lg {
     font-size: 30px;
   }
+  &--xl {
+    font-size: 42px;
+    color: white;
+  }
 }
 
 .g-tag {
@@ -25,4 +29,8 @@
 .g-yellow-icon {
   background-color: $yellow;
   border-radius: 100%;
+}
+
+.white {
+  color: white;
 }
