@@ -69,23 +69,40 @@
     .g-title {
       color: $green;
     }
+    .input-container {
+      position: relative;
+      .fas {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: $grey-dark;
+      }
+    }
     select,
     input {
       width: 100%;
       background-color: white;
       border: none;
       height: 50px;
-      padding: 0 15px;
+      padding: 0 40px 0 10px;
       border-radius: 10px;
       margin-bottom: 15px;
+      &::placeholder {
+        color: $grey-dark;
+        opacity: 1;
+      }
     }
     select {
-      background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+      background-image: url("data:image/svg+xml;utf8,<svg fill='%23797979' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
       background-repeat: no-repeat;
-      background-position-x: 95%;
+      background-position-x: 97%;
       background-position-y: 12px;
       appearance: none;
       cursor: pointer;
+      color: $grey-dark;
     }
+  }
+  &__rediger-un-avis {
+    background-color: $grey;
   }
 }
