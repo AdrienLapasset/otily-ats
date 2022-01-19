@@ -4,11 +4,19 @@
   &__trouver-ecole {
     background-color: $light-orange;
     color: $green;
+    display: flex;
+    flex-direction: column;
     h2 {
       margin-top: 10px;
     }
     img {
       width: 283px;
+    }
+    button {
+      align-self: center;
+      @include media-breakpoint-up($sm) {
+        align-self: start;
+      }
     }
   }
   &__se-faire-rappeler {

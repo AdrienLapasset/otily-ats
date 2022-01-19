@@ -83,6 +83,11 @@
     &.formations-recherchees {
       ul {
         margin-top: 25px;
+        columns: 2;
+        column-gap: 30px;
+        @include media-breakpoint-up($lg) {
+          columns: 1;
+        }
       }
       li {
         margin-bottom: 10px;

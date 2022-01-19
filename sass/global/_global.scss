@@ -16,19 +16,19 @@
 }
 
 .g-tag {
-  max-height: 30px;
+  max-height: 15px;
   border-radius: 5px;
   background-color: #03565c;
   color: white;
   inline-size: fit-content;
   padding: 5px 20px 5px 20px;
-  align-content: center;
-  display: grid;
+  align-items: center;
+  display: flex;
   margin-top: 10px;
   font-weight: 700;
+  flex-wrap: nowrap;
   @include media-breakpoint-up($md) {
-    max-height: 15px;
-    flex-wrap: nowrap;
+    max-height: 30px;
   }
 }
 
