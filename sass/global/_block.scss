@@ -47,4 +47,21 @@
       font-size: 22px;
     }
   }
+  &__rechercher-une-ecole {
+    background-color: $yellow;
+    color: $green;
+    text-align: center;
+    border-radius: 25px 25px 0 0;
+    padding-bottom: 60px;
+    p {
+      margin-bottom: 30px;
+    }
+    .g-btn {
+      background-color: $green;
+      justify-content: flex-start;
+      img {
+        margin-right: 15px;
+      }
+    }
+  }
 }
