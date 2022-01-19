@@ -8,10 +8,28 @@
   padding: 0 20px;
   display: flex;
   align-items: center;
+  width: fit-content;
   @include media-breakpoint-up($md) {
     font-size: 22px;
   }
   &:hover {
-    background-color: $red;
+    color: white;
+  }
+  &--yellow {
+    background-color: $yellow;
+    color: $green;
+  }
+  &--green {
+    background-color: $green;
+    height: 60px;
+    background-color: $green;
+    justify-content: flex-start;
+    text-align: left;
+    img {
+      margin-right: 15px;
+    }
+    @include media-breakpoint-up($md) {
+      font-size: 20px;
+    }
   }
 }

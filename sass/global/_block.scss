@@ -81,17 +81,44 @@
     background-color: $yellow;
     color: $green;
     text-align: center;
-    border-radius: 25px 25px 0 0;
-    padding-bottom: 60px;
     p {
       margin-bottom: 30px;
     }
-    .g-btn {
-      background-color: $green;
-      justify-content: flex-start;
-      img {
-        margin-right: 15px;
+  }
+  &__contact-form {
+    background-color: $grey;
+    .g-title {
+      color: $green;
+    }
+  }
+  &__rediger-un-avis {
+    background-color: $grey;
+    .g-title {
+      color: $green;
+    }
+    &__icon {
+      flex: 0 0 auto;
+      margin-right: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 67px;
+      height: 67px;
+      border-radius: 67px;
+      background-color: $yellow;
+    }
+    &__note {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      img,
+      svg {
+        margin-left: 5px;
       }
     }
+  }
+  &__vous-recherchez {
+    background-color: $green;
+    color: white;
   }
 }
