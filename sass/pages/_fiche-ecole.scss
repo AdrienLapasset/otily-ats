@@ -52,4 +52,11 @@
   #gmap_canvas {
     border-radius: $baseBorderRadius;
   }
+  &__right-col {
+    top: unset;
+    @include media-breakpoint-up($lg) {
+      position: relative;
+      top: -210px;
+    }
+  }
 }
