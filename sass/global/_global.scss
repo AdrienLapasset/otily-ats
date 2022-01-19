@@ -1,16 +1,22 @@
 .g-title {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 18px;
+  @include media-breakpoint-up($md) {
+    font-size: 25px;
+  }
   &--sm {
     font-size: 18px;
   }
   &--lg {
-    font-size: 30px;
+    font-size: 18px;
+    @include media-breakpoint-up($md) {
+      font-size: 30px;
+    }
   }
 }
 
 .g-tag {
-  height: 30px;
+  max-height: 30px;
   border-radius: 5px;
   background-color: #03565c;
   color: white;
@@ -20,6 +26,10 @@
   display: grid;
   margin-top: 10px;
   font-weight: 700;
+  @include media-breakpoint-up($md) {
+    max-height: 15px;
+    flex-wrap: nowrap;
+  }
 }
 
 .g-yellow-icon {
