@@ -106,8 +106,16 @@
       }
     }
     &.orientation-info-decision {
+      padding: 20px 15px;
+      @include media-breakpoint-up($md) {
+        padding: 65px 80px;
+      }
       .list-icon {
         margin-right: 30px;
+        width: 50px;
+        @include media-breakpoint-up($md) {
+          width: auto;
+        }
       }
     }
   }

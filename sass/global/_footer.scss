@@ -1,7 +1,10 @@
 footer {
   background-color: #262626;
   color: white;
-  padding: 50px 75px;
+  padding: 30px 50px;
+  @include media-breakpoint-up($md) {
+    padding: 50px 75px;
+  }
   h4 {
     font-size: 24px;
     font-weight: 700;
@@ -14,7 +17,10 @@ footer {
   }
   .sub-footer {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 40px 40px 0px 40px;
+    padding: 20px 0px;
+    @include media-breakpoint-up($md) {
+      padding: 40px 40px 0px 40px;
+    }
     text-align: center;
     width: 100%;
   }
