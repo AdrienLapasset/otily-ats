@@ -102,4 +102,12 @@
 }
 .g-page {
   background-color: $blue;
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+    @include media-breakpoint-up($lg) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
 }
