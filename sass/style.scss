@@ -6,11 +6,15 @@
 @import "global/variables&mixins";
 @import "global/base";
 @import "global/global";
-@import "global/block";
-@import "global/card";
-@import "global/btn";
-@import "global/footer";
-@import "global/page";
-@import "partials/navbar";
+
+@import "elements/block";
+@import "elements/card";
+@import "elements/btn";
+@import "elements/section";
+
+@import "layout/footer";
+@import "layout/navbar";
+@import "layout/hero-pub";
+
 @import "pages/questionnaire";
 @import "pages/fiche-ecole";
