@@ -18,6 +18,34 @@
         align-self: start;
       }
     }
+    .g-btn {
+      img {
+        max-height: 30px;
+        max-width: 30px;
+        margin-left: 30px;
+      }
+    }
+  }
+  &__bac-description {
+    background-color: $grey-light;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      margin-top: 10px;
+    }
+    button {
+      align-self: center;
+      @include media-breakpoint-up($sm) {
+        align-self: start;
+      }
+    }
+    .g-btn {
+      img {
+        max-height: 30px;
+        max-width: 30px;
+        margin-left: 30px;
+      }
+    }
   }
   &__se-faire-rappeler {
     background-color: $green;
