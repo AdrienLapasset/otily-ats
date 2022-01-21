@@ -25,10 +25,7 @@
     width: 100%;
   }
   &__small {
-    background-color: #262626;
-    padding: 40px;
+    @extend .footer;
     text-align: center;
-    color: white;
-    width: 100%;
   }
 }
