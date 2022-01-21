@@ -42,3 +42,11 @@ ol {
 li {
   list-style: none;
 }
+
+button {
+  background: transparent;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
