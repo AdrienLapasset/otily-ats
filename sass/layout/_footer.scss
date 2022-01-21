@@ -1,4 +1,4 @@
-footer {
+.footer {
   background-color: #262626;
   color: white;
   padding: 30px 50px;
@@ -22,6 +22,13 @@ footer {
       padding: 40px 40px 0px 40px;
     }
     text-align: center;
+    width: 100%;
+  }
+  &__small {
+    background-color: #262626;
+    padding: 40px;
+    text-align: center;
+    color: white;
     width: 100%;
   }
 }
