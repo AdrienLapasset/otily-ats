@@ -1,0 +1,11 @@
+.cgu-mentions-legales {
+  padding: 45px 45px;
+  @include media-breakpoint-up($xl) {
+    padding: 45px 200px;
+  }
+  h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+}
