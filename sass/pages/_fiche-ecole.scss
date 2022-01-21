@@ -1,10 +1,4 @@
 .fiche-ecole {
-  .section-padding {
-    padding: 15px;
-    @include media-breakpoint-up($md) {
-      padding: 30px 60px;
-    }
-  }
   .g-block {
     margin-bottom: 30px;
   }
@@ -14,7 +8,6 @@
     border-bottom: 1px solid #eeeeee;
   }
   &__hero-section {
-    @extend .section-padding;
     background-image: url("../assets/imgs/bg-fiche-ecole-hero.jpg");
     background-size: cover;
     p {
@@ -24,7 +17,6 @@
     }
   }
   &__main-section {
-    @extend .section-padding;
     background-color: white;
   }
   &__a-propos {
