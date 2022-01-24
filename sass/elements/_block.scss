@@ -69,6 +69,7 @@
       inline-size: fit-content;
       margin-left: 10px;
       font-size: 18px;
+      font-weight: 700;
       @include media-breakpoint-up($md) {
         font-size: 30px;
         margin-left: 20px;
