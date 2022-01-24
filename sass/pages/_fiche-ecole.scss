@@ -1,7 +1,4 @@
 .fiche-ecole {
-  .g-block {
-    margin-bottom: 30px;
-  }
   .g-title {
     margin-bottom: 20px;
   }
@@ -27,6 +24,9 @@
   }
   &__main-section {
     background-color: white;
+    .g-block {
+      margin-bottom: 30px;
+    }
   }
   &__a-propos {
     background-color: $yellow;
