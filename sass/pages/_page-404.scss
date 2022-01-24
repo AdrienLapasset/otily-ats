@@ -5,14 +5,30 @@
   h2 {
     font-size: 25px;
     font-weight: 700;
-  }
-  &__main-section {
-    background-color: white;
-  }
-  &__right-col {
-    top: unset;
-    @include media-breakpoint-up($lg) {
-      position: relative;
+    &__hero-section {
+      background-image: url("../assets/imgs/bg-hero-section.jpg");
+      background-size: cover;
+      padding: 40px 15px;
+      @include media-breakpoint-up($lg) {
+        padding: 40px;
+      }
+    }
+    &__filtres {
+      padding: 15px;
+      background-color: $green;
+      color: white;
+      @include media-breakpoint-up($lg) {
+        padding: 15px 40px;
+      }
+    }
+    &__main-section {
+      background-color: white;
+    }
+    &__right-col {
+      top: unset;
+      @include media-breakpoint-up($lg) {
+        position: relative;
+      }
     }
   }
 }
