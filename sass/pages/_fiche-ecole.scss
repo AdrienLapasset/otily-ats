@@ -61,4 +61,25 @@
       top: -180px;
     }
   }
+  &__avis-ecole {
+    padding-top: 30px;
+    & > div {
+      border-top: solid 1px #eeeeee;
+      padding: 30px 0;
+    }
+    label {
+      margin-bottom: 5px;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    img,
+    svg {
+      height: 20px;
+    }
+  }
 }
