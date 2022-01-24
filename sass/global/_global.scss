@@ -1,6 +1,7 @@
 .g-title {
   font-weight: 700;
   font-size: 18px;
+  line-height: 35px;
   @include media-breakpoint-up($md) {
     font-size: 25px;
   }
@@ -14,6 +15,7 @@
     }
   }
   &--xl {
+    line-height: 1.2;
     font-size: 42px;
     color: white;
   }
