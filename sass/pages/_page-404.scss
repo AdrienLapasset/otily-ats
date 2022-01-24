@@ -1,6 +1,18 @@
 .page-404 {
+  .g-block {
+    margin-bottom: 30px;
+  }
   h2 {
     font-size: 25px;
     font-weight: 700;
+  }
+  &__main-section {
+    background-color: white;
+  }
+  &__right-col {
+    top: unset;
+    @include media-breakpoint-up($lg) {
+      position: relative;
+    }
   }
 }
