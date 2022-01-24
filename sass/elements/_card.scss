@@ -11,8 +11,8 @@
     padding: 5px;
     border-radius: 10px;
     @include media-breakpoint-up($md) {
-      min-width: 175px;
-      min-height: 150px;
+      min-width: 180px;
+      min-height: 160px;
       border-radius: $baseBorderRadius;
       padding: 25px;
       flex-direction: column;
