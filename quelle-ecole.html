@@ -70,26 +70,36 @@
             <div class="g-block quelle-ecole__rechercher-ecole mb-4">
               <h2 class="g-title">Rechercher une école</h2>
               <form class="g-form" action="">
-                <label for="">Quelle filière ?</label>
-                <select name="" id="">
-                  <option value="">Vous êtes</option>
-                  <option value="">Vous êtes</option>
-                </select>
-                <label for="">Quelle région ?</label>
-                <select name="" id="">
-                  <option value="">Vous êtes</option>
-                  <option value="">Vous êtes</option>
-                </select>
-                <label for="">Niveau d’étude</label>
-                <select name="" id="">
-                  <option value="">Vous êtes</option>
-                  <option value="">Vous êtes</option>
-                </select>
-                <label for="">Catégories</label>
-                <select name="" id="">
-                  <option value="">Vous êtes</option>
-                  <option value="">Vous êtes</option>
-                </select>
+                <div class="row">
+                  <div class="col-6 col-lg-12">
+                    <label for="">Quelle filière ?</label>
+                    <select name="" id="">
+                      <option value="">Vous êtes</option>
+                      <option value="">Vous êtes</option>
+                    </select>
+                  </div>
+                  <div class="col-6 col-lg-12">
+                    <label for="">Quelle région ?</label>
+                    <select name="" id="">
+                      <option value="">Vous êtes</option>
+                      <option value="">Vous êtes</option>
+                    </select>
+                  </div>
+                  <div class="col-6 col-lg-12">
+                    <label for="">Niveau d’étude</label>
+                    <select name="" id="">
+                      <option value="">Vous êtes</option>
+                      <option value="">Vous êtes</option>
+                    </select>
+                  </div>
+                  <div class="col-6 col-lg-12">
+                    <label for="">Catégories</label>
+                    <select name="" id="">
+                      <option value="">Vous êtes</option>
+                      <option value="">Vous êtes</option>
+                    </select>
+                  </div>
+                </div>
                 <button class="g-btn" type="submit">
                   Rechercher
                   <img class="ms-3" src="assets/icons/icon-search-white.svg" alt="Rechercher" />
@@ -98,7 +108,7 @@
             </div>
 
             <!-- Intéressé par cet établissement ? -->
-            <div class="g-block g-block__contact-form">
+            <div class="g-block g-block__contact-form d-none">
               <h2 class="g-title">Demander à être appelé par un conseiller</h2>
               <form class="g-form" action="">
                 <select name="" id="">
@@ -145,6 +155,7 @@
           <!-- Right column -->
           <div class="col-12 col-lg-8">
 
+            <!-- Liste des écoles -->
             <div class="row">
               <div class="col-6 col-xl-4 ">
                 <div class="g-card g-card__school d-flex">
@@ -530,6 +541,49 @@
                   </div>
                 </div>
               </div>
+            </div>
+
+            <!-- Intéressé par cet établissement ? (mobile) -->
+            <div class="g-block g-block__contact-form d-lg-none">
+              <h2 class="g-title">Demander à être appelé par un conseiller</h2>
+              <form class="g-form" action="">
+                <select name="" id="">
+                  <option value="">Vous êtes</option>
+                  <option value="">Vous êtes</option>
+                </select>
+                <input type="text" placeholder="Nom (requis)">
+                <input type="text" placeholder="Prénom (requis)">
+                <div class="input-container">
+                  <input type="text" placeholder="Téléphone (requis)">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <select name="" id="">
+                  <option value="">Année de naissance (requis)</option>
+                  <option value="">Vous êtes</option>
+                </select>
+                <select name="" id="">
+                  <option value="">Etudes visées</option>
+                  <option value="">Vous êtes</option>
+                </select>
+                <select name="" id="">
+                  <option value="">Niveau d’études</option>
+                  <option value="">Vous êtes</option>
+                </select>
+                <select name="" id="">
+                  <option value="">Département</option>
+                  <option value="">Vous êtes</option>
+                </select>
+                <div class="input-container">
+                  <input type="text" placeholder="Email (requis)">
+                  <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <select name="" id="">
+                  <option value="">Inscrit dans une école ?</option>
+                  <option value="">Vous êtes</option>
+                </select>
+                <input type="text" placeholder="Si oui, laquelle ?">
+                <button class="g-btn" type="submit">Envoyer</button>
+              </form>
             </div>
 
             <!-- Pagination -->
