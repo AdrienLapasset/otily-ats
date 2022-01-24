@@ -4,8 +4,6 @@
     background-size: cover;
     text-align: center;
     padding: 40px 15px;
-    @include media-breakpoint-up($xl) {
-    }
   }
   &__main-section {
     background-color: white;
