@@ -32,6 +32,10 @@
       font-weight: 700;
       @include media-breakpoint-up($sm) {
         font-size: 42px;
+        margin-top: 20px;
+      }
+      @include media-breakpoint-up($lg) {
+        margin-top: 0;
       }
     }
     .hint {
@@ -39,9 +43,12 @@
       font-size: 14px;
       letter-spacing: 0.4em;
       margin-left: 6%;
-
       @include media-breakpoint-up($sm) {
         font-size: 22px;
+        margin-bottom: 40px;
+      }
+      @include media-breakpoint-up($lg) {
+        margin-bottom: 0;
       }
     }
     .g-block__rechercher-une-ecole {
