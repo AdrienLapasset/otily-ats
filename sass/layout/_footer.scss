@@ -14,6 +14,9 @@
     color: white;
     display: block;
     margin-bottom: 10px;
+    &:hover {
+      color: $yellow;
+    }
   }
   .sub-footer {
     border-top: 1px solid rgba(255, 255, 255, 0.2);

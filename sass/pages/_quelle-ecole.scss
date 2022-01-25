@@ -20,6 +20,11 @@
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
+    a {
+      &:hover {
+        color: $yellow;
+      }
+    }
     .g-btn {
       background-color: $grey;
       color: black;
