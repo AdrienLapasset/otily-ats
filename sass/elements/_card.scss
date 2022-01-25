@@ -30,9 +30,17 @@
     }
     &--orange {
       background-color: $orange-light;
+      &:hover {
+        background-color: #f0ae79;
+        color: white;
+      }
     }
     &--green {
       background-color: $green-light;
+      &:hover {
+        background-color: #9bcec8;
+        color: white;
+      }
     }
   }
 
