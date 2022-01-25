@@ -114,8 +114,20 @@
     color: $green;
     text-align: center;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @include media-breakpoint-up($md) {
       padding: 40px;
+    }
+    .g-btn {
+      width: 100%;
+      @include media-breakpoint-up($sm) {
+        width: 300px;
+      }
+      @include media-breakpoint-up($lg) {
+        width: 100%;
+      }
     }
     p {
       margin-bottom: 30px;
