@@ -1,7 +1,7 @@
 .g-section {
   background-color: white;
-  padding: 50px 15px;
-  @include media-breakpoint-up($lg) {
+  padding: 30px 15px;
+  @include media-breakpoint-up($md) {
     padding: 65px 80px;
   }
   .g-title {
