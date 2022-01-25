@@ -1,5 +1,5 @@
 .g-btn {
-  height: 50px;
+  height: 40px;
   border-radius: 50px;
   border: none;
   color: white;
@@ -10,7 +10,10 @@
   align-items: center;
   justify-content: center;
   width: fit-content;
-  line-height: 1.2;
+  line-height: 1.1;
+  @include media-breakpoint-up($sm) {
+    height: 50px;
+  }
   @include media-breakpoint-up($xl) {
     font-size: 20px;
   }
@@ -23,7 +26,6 @@
   }
   &--green {
     background-color: $green;
-    height: 60px;
     background-color: $green;
     justify-content: flex-start;
     text-align: left;
