@@ -91,4 +91,18 @@
       height: 20px;
     }
   }
+  &__pub-iscod {
+    @include media-breakpoint-up($lg) {
+      margin-bottom: 40px;
+    }
+    img {
+      display: block;
+      margin: 10px auto;
+    }
+    p {
+      font-size: 10px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
 }
