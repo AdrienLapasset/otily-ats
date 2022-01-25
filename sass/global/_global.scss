@@ -1,7 +1,7 @@
 .g-title {
   font-weight: 700;
   font-size: 24px;
-  @include media-breakpoint-up($md) {
+  @include media-breakpoint-up($lg) {
     font-size: 28px;
   }
   &--sm {
@@ -9,14 +9,17 @@
   }
   &--lg {
     font-size: 24px;
-    @include media-breakpoint-up($md) {
+    @include media-breakpoint-up($lg) {
       font-size: 30px;
     }
   }
   &--xl {
     line-height: 1.2;
-    font-size: 42px;
     color: white;
+    font-size: 32px;
+    @include media-breakpoint-up($lg) {
+      font-size: 42px;
+    }
   }
 }
 .g-tag {
