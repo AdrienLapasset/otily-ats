@@ -4,10 +4,17 @@
     background-size: cover;
     text-align: center;
     padding: 40px 15px;
+    display: none;
+    @include media-breakpoint-up($sm) {
+      display: block;
+    }
   }
   &__main-section {
     background-color: white;
-    padding: 15px;
+    padding: 0 15px 15px;
+    @include media-breakpoint-up($sm) {
+      padding: 15px;
+    }
     @include media-breakpoint-up($xl) {
       padding: 40px;
     }
@@ -15,6 +22,34 @@
   &__rechercher-ecole {
     background-color: $green;
     color: white;
+    border-radius: 0;
+    margin: 0 -15px;
+    padding: 0 15px 15px;
+    @include media-breakpoint-up($sm) {
+      margin: 0;
+      border-radius: 25px;
+      padding: 30px 15px;
+    }
+    select {
+      height: 25px;
+      background-position-y: 1px;
+      @include media-breakpoint-up($sm) {
+        height: 50px;
+        background-position-y: 12px;
+      }
+    }
+    .g-btn {
+      height: 25px;
+      img {
+        width: 18px;
+        @include media-breakpoint-up($sm) {
+          width: auto;
+        }
+      }
+      @include media-breakpoint-up($sm) {
+        height: 50px;
+      }
+    }
   }
   &__pagination {
     margin-top: 40px;
