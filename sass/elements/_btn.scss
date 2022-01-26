@@ -19,6 +19,7 @@
   }
   &:hover {
     color: white;
+    background-color: $red-hover;
   }
   &--yellow {
     background-color: $yellow;
@@ -26,11 +27,13 @@
   }
   &--green {
     background-color: $green;
-    background-color: $green;
     justify-content: flex-start;
     text-align: left;
     img {
       margin-right: 15px;
+    }
+    &:hover {
+      background-color: $green-hover;
     }
   }
 }

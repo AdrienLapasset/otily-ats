@@ -47,7 +47,7 @@
   <main class="g-page quelle-ecole">
 
     <!-- Bandeau publicitaire -->
-    <div class="hero-pub">
+    <div class="hero-pub d-none d-sm-block">
       <img src="assets/imgs/habillage-iscod-mobile.jpg" alt="">
     </div>
 
@@ -587,29 +587,27 @@
             </div>
 
             <!-- Pagination -->
-            <div class="quelle-ecole__pagination d-none d-lg-flex">
+            <div class="quelle-ecole__pagination">
               <a class="g-btn" href="">
-                <img class="me-3" src="assets/icons/left-arrow.svg" alt="">
-                Précédent
+                <img class="me-md-3" src="assets/icons/left-arrow.svg" alt="">
+                <span class="d-none d-md-block">Précédent</span>
               </a>
               <div class="number-container">
-                <a class="g-btn" href="">1</a>
+                <a class="g-btn d-none d-sm-flex" href="">1</a>
                 <a class="g-btn active" href="">2</a>
-                <span>
+                <span class="d-none d-sm-block">
                   ...
                 </span>
-                <a class="g-btn" href="">54</a>
-                <a class="g-btn" href="">55</a>
+                <a class="g-btn d-none d-sm-flex" href="">54</a>
+                <a class="g-btn d-none d-sm-flex" href="">55</a>
               </div>
               <a class="g-btn" href="">
-                Suivant
-                <img class="ms-3" src="assets/icons/right-arrow.svg" alt="">
+                <span class="d-none d-md-block">Suivant</span>
+                <img class="ms-md-3" src="assets/icons/right-arrow.svg" alt="">
               </a>
             </div>
 
           </div>
-
-
 
         </div>
       </div>
@@ -698,8 +696,6 @@
 
     </div>
     <!-- End Container -->
-
-
 
   </main>
 
