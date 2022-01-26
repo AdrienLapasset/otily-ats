@@ -14,6 +14,16 @@
     @include media-breakpoint-up($lg) {
       padding: 15px 40px;
     }
+    select {
+      height: 25px;
+      background-position-y: 1px;
+    }
+    .g-btn {
+      height: 25px;
+      img {
+        width: 18px;
+      }
+    }
   }
   &__main-section {
     background-color: white;
