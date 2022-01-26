@@ -11,6 +11,12 @@
     align-items: center;
     padding: 5px;
     border-radius: 10px;
+    .fa-arrow-alt-circle-down {
+      font-size: 20px;
+      @include media-breakpoint-up($md) {
+        font-size: 30px;
+      }
+    }
     @include media-breakpoint-up($md) {
       min-height: 160px;
       border-radius: $baseBorderRadius;
