@@ -17,11 +17,21 @@
     select {
       height: 25px;
       background-position-y: 1px;
+      @include media-breakpoint-up($sm) {
+        height: 50px;
+        background-position-y: 12px;
+      }
     }
     .g-btn {
       height: 25px;
       img {
         width: 18px;
+        @include media-breakpoint-up($sm) {
+          width: auto;
+        }
+      }
+      @include media-breakpoint-up($sm) {
+        height: 50px;
       }
     }
   }
