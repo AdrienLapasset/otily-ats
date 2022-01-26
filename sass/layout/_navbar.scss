@@ -26,6 +26,11 @@
     align-items: center;
     display: flex;
     padding: 3px 7px;
+    line-height: 1.2;
+    &:hover {
+      background-color: #fff5c5;
+      color: $green;
+    }
     @include media-breakpoint-up($sm) {
       height: 50px;
       padding: 0 15px;
