@@ -15,6 +15,9 @@
       .nav-item {
         .nav-link {
           color: white;
+          &:hover {
+            color: $yellow;
+          }
         }
       }
     }
