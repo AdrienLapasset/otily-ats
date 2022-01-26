@@ -108,6 +108,10 @@
     }
     li {
       margin-bottom: 10px;
+      &:hover {
+        color: #03565c;
+        cursor: pointer;
+      }
     }
   }
   &__orientation-info-decision {

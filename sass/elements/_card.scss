@@ -48,6 +48,10 @@
 
   &__school {
     background-color: white;
+    &:hover {
+      background-color: #fff5c5;
+      cursor: pointer;
+    }
     padding: 5px 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
