@@ -17,6 +17,7 @@
   }
   textarea {
     @extend .input;
+    padding: 10px;
     resize: none;
   }
   select,
