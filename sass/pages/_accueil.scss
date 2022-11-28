@@ -1,7 +1,25 @@
 .accueil {
   .hero-section {
+    margin-top: 60px;
     h1 {
       font-family: "Causten-ExtraBold";
+      font-size: 80px;
+      line-height: 75px;
+    }
+    &__img {
+      max-width: 100%;
+      @include media-breakpoint-up($lg) {
+        max-width: none;
+      }
+    }
+    &__description {
+      margin-top: -200px;
+      background-color: $grey;
+      color: white;
+      padding: 55px 0 85px;
+      p {
+        margin-bottom: 40px;
+      }
     }
   }
 }

@@ -1,0 +1,22 @@
+.green {
+  color: $green;
+}
+
+.g-btn {
+  font-family: "Causten-Bold";
+  height: 66px;
+  border: none;
+  color: white;
+  background-color: $green;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  &:hover {
+    color: white;
+  }
+}

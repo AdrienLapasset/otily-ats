@@ -4,19 +4,19 @@
   font-family: "Causten-ExtraBold";
   src: url("../../assets/fonts/Causten/Causten-ExtraBold.otf") format("opentype");
 }
-html {
-  background-color: #252f6d;
+@font-face {
+  font-family: "Causten-Bold";
+  src: url("../../assets/fonts/Causten/Causten-Bold.otf") format("opentype");
 }
-
+@font-face {
+  font-family: "Causten-Regular";
+  src: url("../../assets/fonts/Causten/Causten-Regular.otf") format("opentype");
+}
 body {
-  font-family: "Causten", sans-serif;
+  font-family: "Causten-Regular", sans-serif;
   font-weight: 400;
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  body {
-    font-size: 16px;
-  }
+  font-size: 18px;
+  line-height: 25px;
 }
 
 h3 {
@@ -61,12 +61,59 @@ button:focus {
   outline: none;
 }
 
+.green {
+  color: #0dad8d;
+}
+
+.g-btn {
+  font-family: "Causten-Bold";
+  height: 66px;
+  border: none;
+  color: white;
+  background-color: #0dad8d;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+.g-btn:hover {
+  color: white;
+}
+
 header {
   height: 100px;
   display: flex;
   align-items: center;
 }
 
+.accueil .hero-section {
+  margin-top: 60px;
+}
 .accueil .hero-section h1 {
   font-family: "Causten-ExtraBold";
+  font-size: 80px;
+  line-height: 75px;
+}
+.accueil .hero-section__img {
+  max-width: 100%;
+}
+@media (min-width: 992px) {
+  .accueil .hero-section__img {
+    max-width: none;
+  }
+}
+.accueil .hero-section__description {
+  margin-top: -200px;
+  background-color: #32373c;
+  color: white;
+  padding: 55px 0 85px;
+}
+.accueil .hero-section__description p {
+  margin-bottom: 40px;
 }

@@ -3,18 +3,20 @@
   src: url("../../assets/fonts/Causten/Causten-ExtraBold.otf")
     format("opentype");
 }
-
-html {
-  background-color: $blue;
+@font-face {
+  font-family: "Causten-Bold";
+  src: url("../../assets/fonts/Causten/Causten-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Causten-Regular";
+  src: url("../../assets/fonts/Causten/Causten-Regular.otf") format("opentype");
 }
 
 body {
-  font-family: "Causten", sans-serif;
+  font-family: "Causten-Regular", sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  @include media-breakpoint-up($md) {
-    font-size: 16px;
-  }
+  font-size: 18px;
+  line-height: 25px;
 }
 
 h3 {
