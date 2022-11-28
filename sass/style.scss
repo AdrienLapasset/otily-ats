@@ -8,24 +8,10 @@
 @import "global/global";
 
 // Elements
-@import "elements/block";
-@import "elements/card";
-@import "elements/btn";
-@import "elements/section";
-@import "elements/form";
-@import "elements/modal";
 
 // Layout
-@import "layout/navbar";
-@import "layout/hero-pub";
+@import "layout/header";
 @import "layout/footer";
 
 // Pages
-@import "pages/questionnaire";
-@import "pages/fiche-ecole";
-@import "pages/quelle-ecole";
-@import "pages/page-seo";
-@import "pages/page-404";
-@import "pages/connexion-compte";
-@import "pages/cgu-mentions-legales";
-@import "pages/page-404";
+@import "pages/accueil";

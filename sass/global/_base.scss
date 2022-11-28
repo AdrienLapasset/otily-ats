@@ -1,9 +1,15 @@
+@font-face {
+  font-family: "Causten-ExtraBold";
+  src: url("../../assets/fonts/Causten/Causten-ExtraBold.otf")
+    format("opentype");
+}
+
 html {
   background-color: $blue;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Causten", sans-serif;
   font-weight: 400;
   font-size: 14px;
   @include media-breakpoint-up($md) {
