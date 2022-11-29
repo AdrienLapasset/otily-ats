@@ -22,4 +22,76 @@
       }
     }
   }
+  .liste-offres {
+    margin-bottom: 300px;
+    h2 {
+      font-size: 50px;
+      font-family: "Causten-ExtraBold";
+      text-transform: uppercase;
+      margin: 50px 0;
+      text-align: center;
+    }
+    &__filtres {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 20px;
+      select {
+        background-color: white;
+        border: 1px solid #b8b8b8;
+        padding: 15px 60px 10px 20px;
+        background-image: url("data:image/svg+xml;utf8,<svg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0.303041 2.31225L4.82095 6.78085C5.01084 6.96889 5.25562 7.06251 5.5 7.06251C5.74438 7.06251 5.98916 6.96889 6.17905 6.78085L10.697 2.31225C11.0887 1.92428 11.1025 1.28159 10.7277 0.876156C10.3524 0.469932 9.73092 0.457236 9.33883 0.844418L5.5 4.64176L1.66117 0.844418C1.26908 0.456424 0.647552 0.470719 0.272348 0.876156C-0.102487 1.28159 -0.0886631 1.92428 0.303041 2.31225Z' fill='black'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 170px;
+        background-position-y: 22px;
+        appearance: none;
+        cursor: pointer;
+        &::placeholder {
+          color: $grey;
+          opacity: 1;
+        }
+      }
+      .checkbox-container {
+        position: relative;
+        padding-left: 50px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+          &:checked ~ .checkmark:after {
+            display: block;
+          }
+        }
+        .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 40px;
+          height: 40px;
+          border: 1px solid #b8b8b8;
+          &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 15px;
+            top: 5px;
+            width: 10px;
+            height: 20px;
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
 }
