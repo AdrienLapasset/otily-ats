@@ -11,6 +11,16 @@
   font-family: "Causten-Regular";
   src: url("../../assets/fonts/Causten/Causten-Regular.otf") format("opentype");
 }
+@font-face {
+  font-family: "Causten-Medium";
+  src: url("../../assets/fonts/Causten/Causten-Medium.otf") format("opentype");
+}
+
+*,
+p {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: "Causten-Regular", sans-serif;

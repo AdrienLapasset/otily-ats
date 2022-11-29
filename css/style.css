@@ -12,6 +12,16 @@
   font-family: "Causten-Regular";
   src: url("../../assets/fonts/Causten/Causten-Regular.otf") format("opentype");
 }
+@font-face {
+  font-family: "Causten-Medium";
+  src: url("../../assets/fonts/Causten/Causten-Medium.otf") format("opentype");
+}
+*,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Causten-Regular", sans-serif;
   font-weight: 400;
@@ -90,6 +100,22 @@ header {
   height: 100px;
   display: flex;
   align-items: center;
+}
+
+footer {
+  background-color: #151515;
+  padding: 100px 0;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-content > a,
+footer .footer-content p {
+  font-size: 16px;
+  font-family: "Causten-Medium", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .accueil .hero-section {
