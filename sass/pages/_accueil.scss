@@ -1,24 +1,48 @@
 .accueil {
   .hero-section {
-    margin-top: 60px;
+    @include media-breakpoint-up($lg) {
+      margin-top: 60px;
+    }
     h1 {
       font-family: "Causten-ExtraBold";
-      font-size: 80px;
-      line-height: 75px;
+      font-size: 40px;
+      line-height: 36px;
+      @include media-breakpoint-up($lg) {
+        line-height: 75px;
+        font-size: 80px;
+      }
     }
     &__img {
-      max-width: 100%;
-      @include media-breakpoint-up($lg) {
-        max-width: none;
+      &--desktop {
+        display: none;
+        @include media-breakpoint-up($lg) {
+          display: block;
+        }
+      }
+      &--mobile {
+        max-width: 100%;
+        margin-top: -40px;
+        @include media-breakpoint-up($lg) {
+          display: none;
+        }
       }
     }
     &__description {
-      margin-top: -200px;
       background-color: $grey;
       color: white;
-      padding: 55px 0 85px;
+      margin-top: 60px;
+      padding-bottom: 40px;
+      @include media-breakpoint-up($lg) {
+        padding: 55px 0 85px;
+        margin-top: -200px;
+      }
       p {
-        margin-bottom: 40px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        @include media-breakpoint-up($lg) {
+          margin-top: 0;
+          margin-bottom: 40px;
+        }
       }
     }
   }

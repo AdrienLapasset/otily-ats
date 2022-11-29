@@ -19,9 +19,13 @@
 
   <body>
     <!-- Header -->
-    <header>
+    <header class="header">
       <div class="container">
-        <img src="assets/logos/logo-AD-education.svg" alt="" />
+        <img
+          class="header__logo"
+          src="assets/logos/logo-AD-education.svg"
+          alt=""
+        />
       </div>
     </header>
 
@@ -38,8 +42,8 @@
             </div>
             <div class="col-lg-5">
               <img
-                class="hero-section__img"
-                src="assets/imgs/hero-img.jpg"
+                class="hero-section__img--desktop"
+                src="assets/imgs/hero-img-dektop.jpg"
                 alt="AD EDUCATION RECRUTEDE NOUVEAUX TALENTS."
               />
             </div>
@@ -49,6 +53,11 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-6">
+                <img
+                  class="hero-section__img--mobile"
+                  src="assets/imgs/hero-img-mobile.jpg"
+                  alt="AD EDUCATION RECRUTEDE NOUVEAUX TALENTS."
+                />
                 <p>
                   Chez AD Education, nous formons des professionnels reconnus,
                   rigoureux et créatifs dans les domaines du design, du digital,
@@ -62,12 +71,14 @@
                   devenir des « Creative Thinkers » actifs pour imaginer,
                   innover et réussir dans le monde de demain.
                 </p>
-                <a class="g-btn" href="">parcourir les offres</a>
+                <a class="g-btn mt-4 mt-lg-0" href="">parcourir les offres</a>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Nos offers -->
       <section class="nos-offres">
         <div class="container">
           <h2>toutes nos offres d’emploi</h2>
@@ -146,11 +157,18 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
     <footer>
       <div class="container">
         <div class="footer-content">
           <img src="assets/logos/logo-AD-education-blanc.svg" alt="" />
-          <p>Groupe AD Education © 2022</p>
+          <p>
+            Groupe AD Education ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </p>
           <a href="">Mentions légales</a>
           <a href="">Politique de confidentialité</a>
         </div>

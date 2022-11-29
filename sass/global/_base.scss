@@ -25,8 +25,11 @@ p {
 body {
   font-family: "Causten-Regular", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 25px;
+  @include media-breakpoint-up($md) {
+    font-size: 18px;
+  }
 }
 
 h3 {
