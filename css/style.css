@@ -117,23 +117,24 @@ header {
 .accueil .hero-section__description p {
   margin-bottom: 40px;
 }
-.accueil .liste-offres {
+.accueil .nos-offres {
   margin-bottom: 300px;
 }
-.accueil .liste-offres h2 {
+.accueil .nos-offres h2 {
   font-size: 50px;
   font-family: "Causten-ExtraBold";
   text-transform: uppercase;
   margin: 50px 0;
   text-align: center;
 }
-.accueil .liste-offres__filtres {
+.accueil .nos-offres__filtres {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 20px;
+  margin-bottom: 60px;
 }
-.accueil .liste-offres__filtres select {
+.accueil .nos-offres__filtres select {
   background-color: white;
   border: 1px solid #b8b8b8;
   padding: 15px 60px 10px 20px;
@@ -146,19 +147,19 @@ header {
           appearance: none;
   cursor: pointer;
 }
-.accueil .liste-offres__filtres select::-moz-placeholder {
+.accueil .nos-offres__filtres select::-moz-placeholder {
   color: #32373c;
   opacity: 1;
 }
-.accueil .liste-offres__filtres select:-ms-input-placeholder {
+.accueil .nos-offres__filtres select:-ms-input-placeholder {
   color: #32373c;
   opacity: 1;
 }
-.accueil .liste-offres__filtres select::placeholder {
+.accueil .nos-offres__filtres select::placeholder {
   color: #32373c;
   opacity: 1;
 }
-.accueil .liste-offres__filtres .checkbox-container {
+.accueil .nos-offres__filtres .checkbox-container {
   position: relative;
   padding-left: 50px;
   display: flex;
@@ -167,17 +168,17 @@ header {
   width: 40px;
   height: 40px;
 }
-.accueil .liste-offres__filtres .checkbox-container input {
+.accueil .nos-offres__filtres .checkbox-container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
 }
-.accueil .liste-offres__filtres .checkbox-container input:checked ~ .checkmark:after {
+.accueil .nos-offres__filtres .checkbox-container input:checked ~ .checkmark:after {
   display: block;
 }
-.accueil .liste-offres__filtres .checkbox-container .checkmark {
+.accueil .nos-offres__filtres .checkbox-container .checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -185,7 +186,7 @@ header {
   height: 40px;
   border: 1px solid #b8b8b8;
 }
-.accueil .liste-offres__filtres .checkbox-container .checkmark:after {
+.accueil .nos-offres__filtres .checkbox-container .checkmark:after {
   content: "";
   position: absolute;
   display: none;
@@ -196,4 +197,33 @@ header {
   border: solid black;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
+}
+.accueil .nos-offres__liste .offre {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accueil .nos-offres__liste .offre h3 {
+  font-size: 30px;
+  font-family: "Causten-Bold";
+  margin-bottom: 20px;
+}
+.accueil .nos-offres__liste .offre__info {
+  display: flex;
+}
+.accueil .nos-offres__liste .offre__info > div {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-right: 60px;
+}
+.accueil .nos-offres__liste .offre__info > div > img {
+  margin-right: 12px;
+}
+.accueil .nos-offres__liste .offre__cta {
+  color: #0dad8d;
+  font-size: 20px;
+  font-family: "Causten-Bold";
 }

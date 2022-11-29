@@ -22,7 +22,7 @@
       }
     }
   }
-  .liste-offres {
+  .nos-offres {
     margin-bottom: 300px;
     h2 {
       font-size: 50px;
@@ -36,6 +36,7 @@
       align-items: center;
       justify-content: space-between;
       font-size: 20px;
+      margin-bottom: 60px;
       select {
         background-color: white;
         border: 1px solid #b8b8b8;
@@ -90,6 +91,37 @@
             -ms-transform: rotate(45deg);
             transform: rotate(45deg);
           }
+        }
+      }
+    }
+    &__liste {
+      .offre {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+          font-size: 30px;
+          font-family: "Causten-Bold";
+          margin-bottom: 20px;
+        }
+        &__info {
+          display: flex;
+          & > div {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-right: 60px;
+            & > img {
+              margin-right: 12px;
+            }
+          }
+        }
+        &__cta {
+          color: $green;
+          font-size: 20px;
+          font-family: "Causten-Bold";
         }
       }
     }
