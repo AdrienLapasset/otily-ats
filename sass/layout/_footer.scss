@@ -3,13 +3,23 @@ footer {
   padding: 100px 0;
   .footer-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    & > a,
+    & > img {
+      margin-right: 30px;
+      @include media-breakpoint-up($lg) {
+        margin-right: 60px;
+      }
+    }
+    a,
     p {
       font-size: 16px;
       font-family: "Causten-Medium", sans-serif;
       color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 12px;
+      @include media-breakpoint-up($lg) {
+        margin-right: 60px;
+        margin-bottom: 0;
+      }
     }
   }
 }
