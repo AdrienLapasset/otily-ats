@@ -1,0 +1,30 @@
+.poste {
+  .hero-poste {
+    background-image: url("../../assets/imgs/hero-poste.jpg");
+    background-size: cover;
+    @include media-breakpoint-up($lg) {
+      padding: 50px 0;
+    }
+    h1 {
+      font-family: "Causten-ExtraBold";
+      font-size: 34px;
+      color: white;
+      @include media-breakpoint-up($lg) {
+        font-size: 50px;
+      }
+    }
+    &__info {
+      display: flex;
+      align-items: center;
+      color: $brand;
+      font-size: 16px;
+      @include media-breakpoint-up($lg) {
+        font-size: 19px;
+      }
+      img {
+        height: 17px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

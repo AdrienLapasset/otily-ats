@@ -17,7 +17,10 @@
   src: url("../../assets/fonts/Causten/Causten-Medium.otf") format("opentype");
 }
 *,
-p {
+p,
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -140,6 +143,7 @@ footer .footer-content > img {
 @media (min-width: 992px) {
   footer .footer-content > img {
     margin-right: 80px;
+    margin-bottom: 0px;
   }
 }
 footer .footer-content a,
@@ -153,10 +157,15 @@ footer .footer-content p:not(:last-child) {
   margin-bottom: 12px;
 }
 @media (min-width: 992px) {
+  footer .footer-content a:not(:last-child),
+footer .footer-content p:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
   footer .footer-content a,
 footer .footer-content p {
     margin-right: 80px;
-    margin-bottom: 0;
   }
 }
 
@@ -392,4 +401,39 @@ footer .footer-content p {
   .accueil .nos-offres__liste .offre__cta img {
     width: unset;
   }
+}
+
+.poste .hero-poste {
+  background-image: url("../../assets/imgs/hero-poste.jpg");
+  background-size: cover;
+}
+@media (min-width: 992px) {
+  .poste .hero-poste {
+    padding: 50px 0;
+  }
+}
+.poste .hero-poste h1 {
+  font-family: "Causten-ExtraBold";
+  font-size: 34px;
+  color: white;
+}
+@media (min-width: 992px) {
+  .poste .hero-poste h1 {
+    font-size: 50px;
+  }
+}
+.poste .hero-poste__info {
+  display: flex;
+  align-items: center;
+  color: #0dad8d;
+  font-size: 16px;
+}
+@media (min-width: 992px) {
+  .poste .hero-poste__info {
+    font-size: 19px;
+  }
+}
+.poste .hero-poste__info img {
+  height: 17px;
+  margin-right: 10px;
 }

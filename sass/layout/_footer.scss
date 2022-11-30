@@ -16,6 +16,7 @@ footer {
       margin-bottom: 30px;
       @include media-breakpoint-up($lg) {
         margin-right: 80px;
+        margin-bottom: 0px;
       }
     }
     a,
@@ -25,10 +26,12 @@ footer {
       color: rgba(255, 255, 255, 0.5);
       &:not(:last-child) {
         margin-bottom: 12px;
+        @include media-breakpoint-up($lg) {
+          margin-bottom: 0;
+        }
       }
       @include media-breakpoint-up($lg) {
         margin-right: 80px;
-        margin-bottom: 0;
       }
     }
   }
