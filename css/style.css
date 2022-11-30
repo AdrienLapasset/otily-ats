@@ -29,6 +29,7 @@ body {
   font-family: "Causten-Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  overflow-x: hidden;
 }
 @media (min-width: 768px) {
   body {
@@ -403,37 +404,70 @@ footer .footer-content p {
   }
 }
 
-.poste .hero-poste {
+.poste .poste-banner {
   background-image: url("../../assets/imgs/hero-poste.jpg");
   background-size: cover;
 }
 @media (min-width: 992px) {
-  .poste .hero-poste {
+  .poste .poste-banner {
     padding: 50px 0;
   }
 }
-.poste .hero-poste h1 {
+.poste .poste-banner h1 {
   font-family: "Causten-ExtraBold";
   font-size: 34px;
   color: white;
 }
 @media (min-width: 992px) {
-  .poste .hero-poste h1 {
+  .poste .poste-banner h1 {
     font-size: 50px;
+    margin-bottom: 15px;
   }
 }
-.poste .hero-poste__info {
+.poste .poste-banner__info {
   display: flex;
   align-items: center;
   color: #0dad8d;
   font-size: 16px;
 }
 @media (min-width: 992px) {
-  .poste .hero-poste__info {
+  .poste .poste-banner__info {
     font-size: 19px;
   }
 }
-.poste .hero-poste__info img {
+.poste .poste-banner__info img {
   height: 17px;
   margin-right: 10px;
+}
+.poste .poste-description {
+  margin-top: 50px;
+}
+.poste .poste-description h2 {
+  font-family: "Causten-Bold";
+  color: #0dad8d;
+  font-size: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.poste .poste-description p {
+  font-size: 17px;
+  color: #555555;
+}
+.poste .poste-formulaire {
+  background-color: #0dad8d;
+}
+@media (min-width: 992px) {
+  .poste .poste-formulaire {
+    padding: 60px 70px;
+    position: absolute;
+    right: 0;
+    top: 320px;
+  }
+}
+.poste .poste-formulaire h2 {
+  font-family: "Causten-Bold";
+  color: white;
+  text-transform: uppercase;
+  font-size: 19px;
 }

@@ -29,6 +29,7 @@ body {
   font-family: "Causten-Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  overflow-x: hidden;
   @include media-breakpoint-up($md) {
     font-size: 18px;
   }

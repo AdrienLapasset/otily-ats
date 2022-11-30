@@ -1,5 +1,5 @@
 .poste {
-  .hero-poste {
+  .poste-banner {
     background-image: url("../../assets/imgs/hero-poste.jpg");
     background-size: cover;
     @include media-breakpoint-up($lg) {
@@ -11,6 +11,7 @@
       color: white;
       @include media-breakpoint-up($lg) {
         font-size: 50px;
+        margin-bottom: 15px;
       }
     }
     &__info {
@@ -25,6 +26,36 @@
         height: 17px;
         margin-right: 10px;
       }
+    }
+  }
+  .poste-description {
+    margin-top: 50px;
+    h2 {
+      font-family: "Causten-Bold";
+      color: $brand;
+      font-size: 25px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 17px;
+      color: #555555;
+    }
+  }
+  .poste-formulaire {
+    background-color: $brand;
+    @include media-breakpoint-up($lg) {
+      padding: 60px 70px;
+      position: absolute;
+      right: 0;
+      top: 320px;
+    }
+    h2 {
+      font-family: "Causten-Bold";
+      color: white;
+      text-transform: uppercase;
+      font-size: 19px;
     }
   }
 }
