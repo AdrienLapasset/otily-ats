@@ -1,13 +1,21 @@
 footer {
   background-color: $grey-dark;
-  padding: 100px 0;
+  padding: 40px 0;
+  @include media-breakpoint-up($lg) {
+    padding: 100px 0;
+  }
   .footer-content {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    @include media-breakpoint-up($lg) {
+      align-items: center;
+      flex-direction: row;
+    }
     & > img {
-      margin-right: 30px;
+      margin-bottom: 30px;
       @include media-breakpoint-up($lg) {
-        margin-right: 60px;
+        margin-right: 80px;
       }
     }
     a,
@@ -15,9 +23,11 @@ footer {
       font-size: 16px;
       font-family: "Causten-Medium", sans-serif;
       color: rgba(255, 255, 255, 0.5);
-      margin-bottom: 12px;
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
       @include media-breakpoint-up($lg) {
-        margin-right: 60px;
+        margin-right: 80px;
         margin-bottom: 0;
       }
     }
