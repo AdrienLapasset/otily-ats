@@ -89,6 +89,10 @@
             Vous pouvez remplir le formulaire suivant pour envoyer votre
             candidature à notre service recrutement.
           </p>
+          <p class="formulaire-candidature__validation-alert mb-4">
+            Il y a une erreur dans le formulaire, veuillez remplir la case
+            “précisez...”
+          </p>
           <form>
             <input class="mb-2" type="text" placeholder="nom *" required />
             <input class="mb-2" type="text" placeholder="prénom *" required />
@@ -113,7 +117,46 @@
             <p class="formulaire-candidature__indication mb-3">
               <b>Vous n'avez pas votre CV sur vous ? Pas de problème !</b>
             </p>
-            <button class="btn btn-primary" type="submit">Submit form</button>
+            <select class="formulaire-candidature__select mb-4">
+              <option value="">LIEU DE RÉSIDENCE *</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+            </select>
+            <p class="formulaire-candidature__indication mb-4">
+              Précisez s’il vous plaît en quelques lignes ce qui vous motive à
+              postuler dans un autre département que celui de votre lieu de
+              résidence ?
+            </p>
+            <textarea
+              class="mb-4"
+              rows="10"
+              placeholder="Précisez..."
+            ></textarea>
+            <select class="formulaire-candidature__select mb-2">
+              <option value="">NIVEAU D’ÉTUDES *</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+            </select>
+            <select class="formulaire-candidature__select mb-1">
+              <option value="">ANNÉE D’OBTENTION DU BAC</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+            </select>
+            <p class="formulaire-candidature__indication mb-3">
+              (si vous en êtes détenteur / trice)
+            </p>
+            <input
+              class="mb-4"
+              type="text"
+              placeholder="PRÉTENTIONS SALARIALES"
+            />
+            <button class="g-btn g-btn--grey mb-4 w-100" type="submit">
+              envoyer ma candidature
+            </button>
+            <p class="formulaire-candidature__indication mb-3">
+              En cliquant ci-dessus sur « Envoyer ma candidature » vous acceptez
+              nos conditions générales et notre politique de confidentialité.
+            </p>
           </form>
         </div>
       </section>

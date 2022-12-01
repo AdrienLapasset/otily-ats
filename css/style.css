@@ -79,7 +79,7 @@ button:focus {
   outline: none;
 }
 
-.green {
+.brand-color {
   color: #0dad8d;
 }
 
@@ -102,6 +102,9 @@ button:focus {
 }
 .g-btn:hover {
   color: white;
+}
+.g-btn--grey {
+  background-color: #32373c;
 }
 
 .header {
@@ -271,18 +274,6 @@ footer .footer-content p {
           appearance: none;
   cursor: pointer;
   flex: 0 0 100%;
-}
-.accueil .nos-offres__filtres select::-moz-placeholder {
-  color: #32373c;
-  opacity: 1;
-}
-.accueil .nos-offres__filtres select:-ms-input-placeholder {
-  color: #32373c;
-  opacity: 1;
-}
-.accueil .nos-offres__filtres select::placeholder {
-  color: #32373c;
-  opacity: 1;
 }
 @media (min-width: 992px) {
   .accueil .nos-offres__filtres select {
@@ -478,14 +469,21 @@ footer .footer-content p {
   font-size: 13px;
   line-height: 19px;
 }
-.poste .formulaire-candidature__input, .poste .formulaire-candidature__input-file label, .poste .formulaire-candidature input {
+.poste .formulaire-candidature__validation-alert {
+  background-color: #e95c5c;
+  padding: 15px;
+  color: white;
+  font-size: 13px;
+  line-height: 16px;
+}
+.poste .formulaire-candidature__input, .poste .formulaire-candidature textarea, .poste .formulaire-candidature__select, .poste .formulaire-candidature__input-file label, .poste .formulaire-candidature input {
   border: 1px solid #cccccc;
   width: 100%;
   height: 48px;
   padding: 0 15px;
   background-color: white;
 }
-.poste .formulaire-candidature input::-moz-placeholder {
+.poste .formulaire-candidature textarea::-moz-placeholder, .poste .formulaire-candidature input::-moz-placeholder {
   font-size: 12px;
   color: #999999;
   text-transform: uppercase;
@@ -493,7 +491,7 @@ footer .footer-content p {
   letter-spacing: 0.15em;
   opacity: 1;
 }
-.poste .formulaire-candidature input:-ms-input-placeholder {
+.poste .formulaire-candidature textarea:-ms-input-placeholder, .poste .formulaire-candidature input:-ms-input-placeholder {
   font-size: 12px;
   color: #999999;
   text-transform: uppercase;
@@ -501,7 +499,7 @@ footer .footer-content p {
   letter-spacing: 0.15em;
   opacity: 1;
 }
-.poste .formulaire-candidature__placeholder, .poste .formulaire-candidature__input-file p, .poste .formulaire-candidature__input-file label, .poste .formulaire-candidature input::placeholder {
+.poste .formulaire-candidature__placeholder, .poste .formulaire-candidature textarea::placeholder, .poste .formulaire-candidature textarea, .poste .formulaire-candidature__select, .poste .formulaire-candidature__input-file p, .poste .formulaire-candidature__input-file label, .poste .formulaire-candidature input::placeholder {
   font-size: 12px;
   color: #999999;
   text-transform: uppercase;
@@ -560,4 +558,18 @@ footer .footer-content p {
   top: 0px;
   height: 100%;
   padding: 0 25px;
+}
+.poste .formulaire-candidature__select {
+  background-image: url("data:image/svg+xml;utf8,<svg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0.303041 2.31225L4.82095 6.78085C5.01084 6.96889 5.25562 7.06251 5.5 7.06251C5.74438 7.06251 5.98916 6.96889 6.17905 6.78085L10.697 2.31225C11.0887 1.92428 11.1025 1.28159 10.7277 0.876156C10.3524 0.469932 9.73092 0.457236 9.33883 0.844418L5.5 4.64176L1.66117 0.844418C1.26908 0.456424 0.647552 0.470719 0.272348 0.876156C-0.102487 1.28159 -0.0886631 1.92428 0.303041 2.31225Z' fill='black'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 20px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+.poste .formulaire-candidature textarea {
+  height: unset;
+  padding-top: 15px;
 }

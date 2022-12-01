@@ -83,10 +83,6 @@
         background-position-y: 20px;
         appearance: none;
         cursor: pointer;
-        &::placeholder {
-          color: $grey;
-          opacity: 1;
-        }
         flex: 0 0 100%;
         @include media-breakpoint-up($lg) {
           flex: 0 1 auto;

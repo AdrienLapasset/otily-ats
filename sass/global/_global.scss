@@ -1,4 +1,4 @@
-.green {
+.brand-color {
   color: $brand;
 }
 
@@ -18,5 +18,8 @@
   font-size: 14px;
   &:hover {
     color: white;
+  }
+  &--grey {
+    background-color: $grey;
   }
 }
