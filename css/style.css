@@ -454,20 +454,110 @@ footer .footer-content p {
   font-size: 17px;
   color: #555555;
 }
-.poste .poste-formulaire {
+.poste .formulaire-candidature {
   background-color: #0dad8d;
 }
 @media (min-width: 992px) {
-  .poste .poste-formulaire {
+  .poste .formulaire-candidature {
+    max-width: 600px;
     padding: 60px 70px;
     position: absolute;
     right: 0;
     top: 320px;
   }
 }
-.poste .poste-formulaire h2 {
+.poste .formulaire-candidature h2 {
   font-family: "Causten-Bold";
   color: white;
   text-transform: uppercase;
   font-size: 19px;
+  margin-bottom: 20px;
+}
+.poste .formulaire-candidature__hint {
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 19px;
+}
+.poste .formulaire-candidature__input, .poste .formulaire-candidature__input-file label, .poste .formulaire-candidature input {
+  border: 1px solid #cccccc;
+  width: 100%;
+  height: 48px;
+  padding: 0 15px;
+  background-color: white;
+}
+.poste .formulaire-candidature input::-moz-placeholder {
+  font-size: 12px;
+  color: #999999;
+  text-transform: uppercase;
+  font-family: "Causten-Bold";
+  letter-spacing: 0.15em;
+  opacity: 1;
+}
+.poste .formulaire-candidature input:-ms-input-placeholder {
+  font-size: 12px;
+  color: #999999;
+  text-transform: uppercase;
+  font-family: "Causten-Bold";
+  letter-spacing: 0.15em;
+  opacity: 1;
+}
+.poste .formulaire-candidature__placeholder, .poste .formulaire-candidature__input-file p, .poste .formulaire-candidature__input-file label, .poste .formulaire-candidature input::placeholder {
+  font-size: 12px;
+  color: #999999;
+  text-transform: uppercase;
+  font-family: "Causten-Bold";
+  letter-spacing: 0.15em;
+  opacity: 1;
+}
+.poste .formulaire-candidature__input-with-icon {
+  position: relative;
+}
+.poste .formulaire-candidature__input-with-icon input {
+  padding-left: 50px;
+}
+.poste .formulaire-candidature__input-with-icon .icon-container {
+  width: 42px;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.poste .formulaire-candidature__indication {
+  color: white;
+  font-size: 11px;
+}
+.poste .formulaire-candidature__indication b {
+  font-size: 12px;
+}
+.poste .formulaire-candidature__input-file {
+  position: relative;
+}
+.poste .formulaire-candidature__input-file input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.poste .formulaire-candidature__input-file label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
+.poste .formulaire-candidature__input-file p {
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  padding: 0 25px;
 }

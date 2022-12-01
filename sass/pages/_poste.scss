@@ -43,9 +43,10 @@
       color: #555555;
     }
   }
-  .poste-formulaire {
+  .formulaire-candidature {
     background-color: $brand;
     @include media-breakpoint-up($lg) {
+      max-width: 600px;
       padding: 60px 70px;
       position: absolute;
       right: 0;
@@ -56,6 +57,88 @@
       color: white;
       text-transform: uppercase;
       font-size: 19px;
+      margin-bottom: 20px;
+    }
+    &__hint {
+      margin-bottom: 20px;
+      font-size: 13px;
+      line-height: 19px;
+    }
+    &__input {
+      border: 1px solid #cccccc;
+      width: 100%;
+      height: 48px;
+      padding: 0 15px;
+      background-color: white;
+    }
+    &__placeholder {
+      font-size: 12px;
+      color: #999999;
+      text-transform: uppercase;
+      font-family: "Causten-Bold";
+      letter-spacing: 0.15em;
+      opacity: 1;
+    }
+    input {
+      @extend .formulaire-candidature__input;
+      &::placeholder {
+        @extend .formulaire-candidature__placeholder;
+      }
+    }
+    &__input-with-icon {
+      position: relative;
+      & input {
+        padding-left: 50px;
+      }
+      .icon-container {
+        width: 42px;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background-color: #d9d9d9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    &__indication {
+      color: white;
+      font-size: 11px;
+      b {
+        font-size: 12px;
+      }
+    }
+    &__input-file {
+      position: relative;
+      input {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+      }
+      label {
+        cursor: pointer;
+        @extend .formulaire-candidature__input;
+        @extend .formulaire-candidature__placeholder;
+        display: flex;
+        align-items: center;
+        padding-right: 50px;
+      }
+      p {
+        background-color: #d9d9d9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        @extend .formulaire-candidature__placeholder;
+        height: 100%;
+        padding: 0 25px;
+      }
     }
   }
 }

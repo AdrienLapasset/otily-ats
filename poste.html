@@ -31,7 +31,7 @@
 
     <main class="poste">
       <!-- Bannière -->
-      <div class="poste-banner">
+      <section class="poste-banner">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -45,13 +45,13 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="container relative">
-        <div class="row">
-          <div class="col-lg-7">
-            <!-- Description -->
-            <div class="poste-description">
+      <!-- Description -->
+      <section class="poste-description">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
               <h2>Entreprise</h2>
               <p>
                 Pionnière en France dans les méthodes d’apprentissage en ligne,
@@ -80,13 +80,43 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- Formulaire -->
-      <div class="poste-formulaire">
+      <section class="formulaire-candidature">
         <div class="container">
           <h2>ce poste vous intéresse ?<br />Postulez maintenant !</h2>
+          <p class="formulaire-candidature__hint">
+            Vous pouvez remplir le formulaire suivant pour envoyer votre
+            candidature à notre service recrutement.
+          </p>
+          <form>
+            <input class="mb-2" type="text" placeholder="nom *" required />
+            <input class="mb-2" type="text" placeholder="prénom *" required />
+            <input class="mb-2" type="text" placeholder="email *" required />
+            <div class="formulaire-candidature__input-with-icon mb-1">
+              <input type="text" placeholder="téléphone *" required />
+              <div class="icon-container">
+                <img src="assets/icons/mobile.svg" alt="" />
+              </div>
+            </div>
+            <p class="formulaire-candidature__indication mb-2">
+              Numéro de téléphone mobile
+            </p>
+            <div class="formulaire-candidature__input-file mb-1">
+              <input type="file" name="file" id="file" class="inputfile" />
+              <label for="file">Choose a file</label>
+              <p>PARCOURIR</p>
+            </div>
+            <p class="formulaire-candidature__indication mb-4">
+              Formats acceptés: .pdf, .doc, .docx, .rtf
+            </p>
+            <p class="formulaire-candidature__indication mb-3">
+              <b>Vous n'avez pas votre CV sur vous ? Pas de problème !</b>
+            </p>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </form>
         </div>
-      </div>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -125,4 +155,7 @@
     type="text/javascript"
     src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
   ></script>
+
+  <!-- Local JS import -->
+  <script type="text/javascript" src="js/js.js"></script>
 </html>
