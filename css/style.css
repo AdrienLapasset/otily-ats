@@ -450,11 +450,23 @@ footer .footer-content p {
 }
 @media (min-width: 992px) {
   .poste .formulaire-candidature {
-    max-width: 600px;
-    padding: 60px 70px;
+    max-width: 490px;
+    padding: 60px;
     position: absolute;
     right: 0;
-    top: 320px;
+    top: 220px;
+  }
+}
+@media (min-width: 1200px) {
+  .poste .formulaire-candidature {
+    max-width: 600px;
+    padding: 60px 70px;
+  }
+}
+@media (min-width: 1400px) {
+  .poste .formulaire-candidature {
+    max-width: 700px;
+    padding: 60px 200px 60px 70px;
   }
 }
 .poste .formulaire-candidature h2 {
