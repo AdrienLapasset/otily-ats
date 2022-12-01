@@ -104,6 +104,7 @@
     }
     input {
       @extend .formulaire-candidature__input;
+      @extend .formulaire-candidature__placeholder;
       &::placeholder {
         @extend .formulaire-candidature__placeholder;
       }

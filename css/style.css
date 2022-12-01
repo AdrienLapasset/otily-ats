@@ -517,7 +517,7 @@ footer .footer-content p {
   letter-spacing: 0.15em;
   opacity: 1;
 }
-.poste .formulaire-candidature__placeholder, .poste .formulaire-candidature textarea::placeholder, .poste .formulaire-candidature textarea, .poste .formulaire-candidature__select, .poste .formulaire-candidature__input-file p, .poste .formulaire-candidature__input-file label, .poste .formulaire-candidature input::placeholder {
+.poste .formulaire-candidature__placeholder, .poste .formulaire-candidature textarea::placeholder, .poste .formulaire-candidature textarea, .poste .formulaire-candidature__select, .poste .formulaire-candidature__input-file p, .poste .formulaire-candidature__input-file label, .poste .formulaire-candidature input::placeholder, .poste .formulaire-candidature input {
   font-size: 12px;
   color: #999999;
   text-transform: uppercase;
