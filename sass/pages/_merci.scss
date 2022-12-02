@@ -1,0 +1,25 @@
+.merci {
+  min-height: calc(100vh - 238px - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    font-size: 30px;
+    font-family: "Causten-ExtraBold";
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+    @include media-breakpoint-up($lg) {
+      margin-bottom: 30px;
+      font-size: 60px;
+      line-height: 60px;
+    }
+  }
+  p {
+    font-size: 14px;
+    font-family: "Causten-Bold";
+    @include media-breakpoint-up($lg) {
+      font-size: 19px;
+    }
+  }
+}

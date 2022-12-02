@@ -757,3 +757,32 @@ footer .footer-content p {
     font-size: 22px;
   }
 }
+
+.merci {
+  min-height: calc(100vh - 238px - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.merci h1 {
+  font-size: 30px;
+  font-family: "Causten-ExtraBold";
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+@media (min-width: 992px) {
+  .merci h1 {
+    margin-bottom: 30px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+.merci p {
+  font-size: 14px;
+  font-family: "Causten-Bold";
+}
+@media (min-width: 992px) {
+  .merci p {
+    font-size: 19px;
+  }
+}
