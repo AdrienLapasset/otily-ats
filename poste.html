@@ -47,11 +47,11 @@
         </div>
       </section>
 
-      <!-- Description -->
-      <section class="poste-description">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- Description poste -->
+            <section class="poste-description">
               <h2>Entreprise</h2>
               <p>
                 Pionnière en France dans les méthodes d’apprentissage en ligne,
@@ -157,10 +157,37 @@
                 Rejoignez notre équipe dynamique et motivée, qui aime relever
                 des défis !
               </p>
-            </div>
+            </section>
+
+            <!-- Carte poste -->
+            <section class="carte-poste">
+              <ul>
+                <li>
+                  <p class="carte-poste__type">Date de début</p>
+                  <p class="carte-poste__info">Dès que possible</p>
+                </li>
+                <li>
+                  <p class="carte-poste__type">Poste proposé à</p>
+                  <p class="carte-poste__info">SOPHIA-ANTIPOLIS</p>
+                </li>
+                <li>
+                  <p class="carte-poste__type">Rémunération</p>
+                  <p class="carte-poste__info">Selon profil</p>
+                </li>
+                <li>
+                  <p class="carte-poste__type">Poste en</p>
+                  <p class="carte-poste__info">CDI</p>
+                </li>
+              </ul>
+            </section>
+
+            <button class="g-btn g-btn--grey mb-4" type="submit">
+              POSTULER
+            </button>
           </div>
         </div>
-      </section>
+      </div>
+      <!-- End container -->
 
       <!-- Formulaire candidature-->
       <section class="formulaire-candidature">
@@ -189,7 +216,7 @@
             </p>
             <div class="formulaire-candidature__input-file mb-1">
               <input type="file" name="file" id="file" class="inputfile" />
-              <label for="file">Choose a file</label>
+              <label for="file">CV</label>
               <p>PARCOURIR</p>
             </div>
             <p class="formulaire-candidature__indication mb-4">

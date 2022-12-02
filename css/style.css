@@ -20,7 +20,9 @@
 p,
 h1,
 h2,
-h3 {
+h3,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -590,4 +592,27 @@ footer .footer-content p {
 .poste .formulaire-candidature textarea {
   height: unset;
   padding-top: 15px;
+}
+.poste .carte-poste {
+  background: rgba(13, 173, 141, 0.15);
+  padding: 40px 35px;
+  margin: 60px 0 30px;
+}
+.poste .carte-poste ul li {
+  display: flex;
+}
+.poste .carte-poste ul li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.poste .carte-poste__type {
+  flex: 0 0 200px;
+  font-size: 16px;
+  color: #0dad8d;
+  text-transform: uppercase;
+  font-family: "Causten-Bold";
+  letter-spacing: 0.12em;
+}
+.poste .carte-poste__info {
+  font-size: 16px;
+  color: #555555;
 }

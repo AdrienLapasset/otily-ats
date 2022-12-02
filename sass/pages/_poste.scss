@@ -184,4 +184,29 @@
       }
     }
   }
+  .carte-poste {
+    background: rgba(13, 173, 141, 0.15);
+    padding: 40px 35px;
+    margin: 60px 0 30px;
+    ul {
+      li {
+        display: flex;
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    &__type {
+      flex: 0 0 200px;
+      font-size: 16px;
+      color: $brand;
+      text-transform: uppercase;
+      font-family: "Causten-Bold";
+      letter-spacing: 0.12em;
+    }
+    &__info {
+      font-size: 16px;
+      color: #555555;
+    }
+  }
 }
