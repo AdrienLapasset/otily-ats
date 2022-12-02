@@ -233,13 +233,14 @@ footer .footer-content p {
 .accueil .nos-offres h2 {
   font-family: "Causten-ExtraBold";
   text-transform: uppercase;
-  margin: 50px 0;
+  margin: 30px 0;
   text-align: center;
   font-size: 22px;
 }
 @media (min-width: 992px) {
   .accueil .nos-offres h2 {
     font-size: 50px;
+    margin: 50px 0;
   }
 }
 .accueil .nos-offres__filtres {
@@ -247,10 +248,11 @@ footer .footer-content p {
   flex-wrap: wrap;
   align-items: center;
   font-size: 12px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 @media (min-width: 992px) {
   .accueil .nos-offres__filtres {
+    margin-bottom: 60px;
     font-size: 20px;
     justify-content: space-between;
   }
@@ -330,10 +332,15 @@ footer .footer-content p {
   transform: rotate(45deg);
 }
 .accueil .nos-offres__liste .offre {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 992px) {
+  .accueil .nos-offres__liste .offre {
+    margin-bottom: 60px;
+  }
 }
 .accueil .nos-offres__liste .offre h3 {
   font-family: "Causten-Bold";
