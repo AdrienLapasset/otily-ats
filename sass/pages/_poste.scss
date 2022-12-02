@@ -1,4 +1,5 @@
 .poste {
+  // Banière
   .poste-banner {
     background-image: url("../../assets/imgs/hero-poste.jpg");
     background-size: cover;
@@ -35,6 +36,7 @@
       right: 15px;
       bottom: -30px;
       font-size: 8px;
+      text-transform: uppercase;
       @include media-breakpoint-up($lg) {
         position: unset;
         color: white;
@@ -43,6 +45,8 @@
       }
     }
   }
+
+  // Description du poste
   .poste-description {
     h2 {
       font-family: "Causten-Bold";
@@ -71,6 +75,8 @@
       list-style: disc;
     }
   }
+
+  // Formulaire de candidature
   .formulaire-candidature {
     background-color: $brand;
     padding: 30px 0;
@@ -101,12 +107,11 @@
     }
     &__hint {
       margin-bottom: 20px;
-      font-size: 13px;
       font-size: 12px;
       line-height: 13px;
       @include media-breakpoint-up($lg) {
         line-height: 19px;
-        font-size: 19px;
+        font-size: 13px;
       }
     }
     &__validation-alert {
@@ -212,7 +217,52 @@
         @extend .formulaire-candidature__placeholder;
       }
     }
+    &__modal-btn {
+      background: #32373c;
+      font-size: 11px;
+      font-family: "Causten-Bold";
+      color: white;
+      padding: 5px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      line-height: 11px;
+      text-align: left;
+      img {
+        margin-right: 5px;
+      }
+    }
+    &__rappel-modal {
+      .modal-content {
+        color: white;
+        background-color: $grey;
+        border-radius: 25px;
+        padding: 30px 40px;
+        .header {
+          display: flex;
+          margin-bottom: 20px;
+          img {
+            height: 40px;
+            margin-right: 20px;
+          }
+          h3 {
+            font-family: "Causten-Bold";
+            font-size: 22px;
+            margin-bottom: 5px;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+        .info {
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+    }
   }
+
+  // Carte poste
   .carte-poste {
     background: rgba(13, 173, 141, 0.15);
     padding: 40px 35px;
@@ -243,6 +293,8 @@
       color: #555555;
     }
   }
+
+  // Partage
   .partagez-annonce {
     margin-top: 50px;
     padding-top: 30px;

@@ -230,9 +230,9 @@
           <form>
             <input class="mb-2" type="text" placeholder="nom *" required />
             <input class="mb-2" type="text" placeholder="prénom *" required />
-            <input class="mb-2" type="text" placeholder="email *" required />
+            <input class="mb-2" type="email" placeholder="email *" required />
             <div class="formulaire-candidature__input-with-icon mb-1">
-              <input type="text" placeholder="téléphone *" required />
+              <input type="tel" placeholder="téléphone *" required />
               <div class="icon-container">
                 <img src="assets/icons/mobile.svg" alt="" />
               </div>
@@ -248,9 +248,20 @@
             <p class="formulaire-candidature__indication mb-4">
               Formats acceptés: .pdf, .doc, .docx, .rtf
             </p>
-            <p class="formulaire-candidature__indication mb-3">
-              <b>Vous n'avez pas votre CV sur vous ? Pas de problème !</b>
-            </p>
+            <div class="d-flex align-items-center mb-3 justify-content-between">
+              <p class="formulaire-candidature__indication">
+                <b>Vous n'avez pas votre CV sur vous ? Pas de problème !</b>
+              </p>
+              <button
+                type="button"
+                class="formulaire-candidature__modal-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#rappelModal"
+              >
+                <img src="assets/icons/rappel.svg" alt="" />
+                postuler<br />plus tard
+              </button>
+            </div>
             <select class="formulaire-candidature__select mb-4">
               <option value="">LIEU DE RÉSIDENCE *</option>
               <option value="dog">Dog</option>
@@ -292,6 +303,46 @@
               nos conditions générales et notre politique de confidentialité.
             </p>
           </form>
+        </div>
+
+        <!-- Rappel Modal -->
+        <div
+          class="modal fade formulaire-candidature__rappel-modal"
+          id="rappelModal"
+          tabindex="-1"
+          aria-labelledby="rappelModal"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="header">
+                <img src="assets/icons/rappel.svg" alt="" />
+                <div>
+                  <h3>RAPPEL DE CANDIDATURE</h3>
+                  <p>
+                    Recevez un e-mail de rappel ce soir pour me rappeler
+                    d'uploader mon CV.
+                  </p>
+                </div>
+              </div>
+              <form action="">
+                <input
+                  class="mb-3"
+                  type="email"
+                  placeholder="email *"
+                  required
+                />
+                <button class="g-btn mb-4" type="submit">
+                  <img class="me-2" src="assets/icons/rappel.svg" alt="" />
+                  Valider
+                </button>
+              </form>
+              <p class="info">
+                En cliquant ci-dessus sur « Valider » vous acceptez nos
+                conditions générales et notre politique de confidentialité.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
