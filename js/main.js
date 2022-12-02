@@ -15,8 +15,8 @@ $(document).ready(function () {
   $(document).scroll(function () {
     var y = $(this).scrollTop();
     if (
-      y === 0 ||
-      $(window).scrollTop() + $(window).height() == $(document).height()
+      y < 20 ||
+      $(window).scrollTop() + $(window).height() > $(document).height() - 20
     ) {
       $(".poste-interesse").fadeOut();
     } else {
