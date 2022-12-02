@@ -93,7 +93,7 @@
     }
     @include media-breakpoint-up($xxl) {
       max-width: 700px;
-      padding: 60px 200px 60px 70px;
+      padding: 60px 190px 60px 70px;
     }
     h2 {
       font-family: "Causten-Bold";
@@ -218,6 +218,8 @@
       }
     }
     &__modal-btn {
+      margin-left: 10px;
+      flex: 0 0 81px;
       background: #32373c;
       font-size: 11px;
       font-family: "Causten-Bold";
