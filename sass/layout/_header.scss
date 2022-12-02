@@ -1,7 +1,10 @@
 .header {
-  height: 100px;
+  height: 80px;
   display: flex;
   align-items: center;
+  @include media-breakpoint-up($lg) {
+    height: 100px;
+  }
   &__logo {
     height: 30px;
     @include media-breakpoint-up($lg) {

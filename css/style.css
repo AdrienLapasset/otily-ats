@@ -110,9 +110,14 @@ button:focus {
 }
 
 .header {
-  height: 100px;
+  height: 80px;
   display: flex;
   align-items: center;
+}
+@media (min-width: 992px) {
+  .header {
+    height: 100px;
+  }
 }
 .header__logo {
   height: 30px;
