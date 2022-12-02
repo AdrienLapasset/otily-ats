@@ -616,3 +616,20 @@ footer .footer-content p {
   font-size: 16px;
   color: #555555;
 }
+.poste .partagez-annonce {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 3px solid #151515;
+  display: flex;
+  justify-content: space-between;
+}
+.poste .partagez-annonce h2 {
+  font-size: 20px;
+}
+.poste .partagez-annonce__socials a {
+  margin-left: 10px;
+}
+.poste .mots-cles {
+  margin: 30px 0 150px;
+  font-size: 11px;
+}

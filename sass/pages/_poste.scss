@@ -209,4 +209,23 @@
       color: #555555;
     }
   }
+  .partagez-annonce {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 3px solid #151515;
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      font-size: 20px;
+    }
+    &__socials {
+      a {
+        margin-left: 10px;
+      }
+    }
+  }
+  .mots-cles {
+    margin: 30px 0 150px;
+    font-size: 11px;
+  }
 }
