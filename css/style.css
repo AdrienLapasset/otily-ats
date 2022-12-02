@@ -733,3 +733,27 @@ footer .footer-content p {
     margin: 30px 0 150px;
   }
 }
+.poste .poste-interesse {
+  display: none;
+  background-color: #0dad8d;
+  color: white;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.poste .poste-interesse .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.poste .poste-interesse p {
+  font-family: "Causten-Medium";
+  margin-right: 30px;
+  font-size: 15px;
+}
+@media (min-width: 992px) {
+  .poste .poste-interesse p {
+    font-size: 22px;
+  }
+}
