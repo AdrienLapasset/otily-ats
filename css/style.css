@@ -401,6 +401,7 @@ footer .footer-content p {
   background-image: url("../../assets/imgs/hero-poste.jpg");
   background-size: cover;
   padding: 30px 0;
+  position: relative;
 }
 @media (min-width: 992px) {
   .poste .poste-banner {
@@ -433,19 +434,45 @@ footer .footer-content p {
   height: 17px;
   margin-right: 10px;
 }
+.poste .poste-banner__date {
+  position: absolute;
+  text-align: right;
+  right: 15px;
+  bottom: -30px;
+  font-size: 8px;
+}
+@media (min-width: 992px) {
+  .poste .poste-banner__date {
+    position: unset;
+    color: white;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+}
 .poste .poste-description h2 {
   font-family: "Causten-Bold";
   color: #0dad8d;
-  font-size: 25px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 50px 0 15px;
+  font-size: 16px;
+}
+@media (min-width: 992px) {
+  .poste .poste-description h2 {
+    font-size: 25px;
+  }
 }
 .poste .poste-description p,
 .poste .poste-description ul {
-  font-size: 17px;
   color: #555555;
   margin-bottom: 15px;
+  font-size: 12px;
+}
+@media (min-width: 992px) {
+  .poste .poste-description p,
+.poste .poste-description ul {
+    font-size: 17px;
+  }
 }
 .poste .poste-description ul {
   padding: 0 15px;
@@ -455,6 +482,7 @@ footer .footer-content p {
 }
 .poste .formulaire-candidature {
   background-color: #0dad8d;
+  padding: 30px 0;
 }
 @media (min-width: 992px) {
   .poste .formulaire-candidature {
@@ -481,13 +509,25 @@ footer .footer-content p {
   font-family: "Causten-Bold";
   color: white;
   text-transform: uppercase;
-  font-size: 19px;
   margin-bottom: 20px;
+  font-size: 16px;
+}
+@media (min-width: 992px) {
+  .poste .formulaire-candidature h2 {
+    font-size: 19px;
+  }
 }
 .poste .formulaire-candidature__hint {
   margin-bottom: 20px;
   font-size: 13px;
-  line-height: 19px;
+  font-size: 12px;
+  line-height: 13px;
+}
+@media (min-width: 992px) {
+  .poste .formulaire-candidature__hint {
+    line-height: 19px;
+    font-size: 19px;
+  }
 }
 .poste .formulaire-candidature__validation-alert {
   background-color: #e95c5c;
@@ -605,12 +645,19 @@ footer .footer-content p {
   margin-bottom: 15px;
 }
 .poste .carte-poste__type {
-  flex: 0 0 200px;
-  font-size: 16px;
+  flex: 0 0 50%;
   color: #0dad8d;
   text-transform: uppercase;
-  font-family: "Causten-Bold";
   letter-spacing: 0.12em;
+  font-size: 12px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .poste .carte-poste__type {
+    flex: 0 0 200px;
+    font-family: "Causten-Bold";
+    font-size: 16px;
+  }
 }
 .poste .carte-poste__info {
   font-size: 16px;
@@ -630,6 +677,11 @@ footer .footer-content p {
   margin-left: 10px;
 }
 .poste .mots-cles {
-  margin: 30px 0 150px;
+  margin: 30px 0;
   font-size: 11px;
+}
+@media (min-width: 992px) {
+  .poste .mots-cles {
+    margin: 30px 0 150px;
+  }
 }
