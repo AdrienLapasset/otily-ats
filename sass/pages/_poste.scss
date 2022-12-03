@@ -56,7 +56,7 @@
       margin: 50px 0 15px;
       font-size: 16px;
       @include media-breakpoint-up($lg) {
-        font-size: 25px;
+        font-size: 22px;
       }
     }
     p,
@@ -65,7 +65,7 @@
       margin-bottom: 15px;
       font-size: 12px;
       @include media-breakpoint-up($lg) {
-        font-size: 17px;
+        font-size: 16px;
       }
     }
     ul {

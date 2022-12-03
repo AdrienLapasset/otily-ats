@@ -4,11 +4,11 @@
 
 .g-btn {
   font-family: "Causten-Bold";
-  height: 66px;
+  height: 40px;
+  padding: 0 35px;
   border: none;
   color: white;
   background-color: $brand;
-  padding: 0 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,6 +16,10 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 14px;
+  @include media-breakpoint-up($lg) {
+    padding: 0 60px;
+    height: 66px;
+  }
   &:hover {
     color: white;
   }
