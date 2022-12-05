@@ -3,11 +3,16 @@
     .checkmark:after {
       border: solid $ADE-color;
     }
-    .offre__cta {
-      color: $ADE-color;
-    }
     .g-btn {
       background-color: $ADE-color;
+    }
+    .offre {
+      &__cta {
+        color: $ADE-color;
+      }
+      &__info svg {
+        fill: $ADE-color;
+      }
     }
   }
   .hero-section {
@@ -179,7 +184,7 @@
             @include media-breakpoint-up($lg) {
               margin-right: 60px;
             }
-            & > img {
+            & > svg {
               margin-right: 10px;
               height: 17px;
               @include media-breakpoint-up($lg) {

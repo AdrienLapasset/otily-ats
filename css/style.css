@@ -188,11 +188,14 @@ footer .footer-content p {
 .accueil--ADE .checkmark:after {
   border: solid #0dad8d;
 }
+.accueil--ADE .g-btn {
+  background-color: #0dad8d;
+}
 .accueil--ADE .offre__cta {
   color: #0dad8d;
 }
-.accueil--ADE .g-btn {
-  background-color: #0dad8d;
+.accueil--ADE .offre__info svg {
+  fill: #0dad8d;
 }
 @media (min-width: 992px) {
   .accueil .hero-section {
@@ -390,12 +393,12 @@ footer .footer-content p {
     margin-right: 60px;
   }
 }
-.accueil .nos-offres__liste .offre__info > div > img {
+.accueil .nos-offres__liste .offre__info > div > svg {
   margin-right: 10px;
   height: 17px;
 }
 @media (min-width: 992px) {
-  .accueil .nos-offres__liste .offre__info > div > img {
+  .accueil .nos-offres__liste .offre__info > div > svg {
     height: unset;
     margin-right: 12px;
   }
