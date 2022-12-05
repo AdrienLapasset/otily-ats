@@ -1,4 +1,18 @@
 .poste {
+  &--ADE {
+    .poste-banner__info,
+    .poste-description h2,
+    .carte-poste__type {
+      color: $ADE-color;
+    }
+    .formulaire-candidature,
+    .poste-interesse {
+      background-color: $ADE-color;
+    }
+    .g-btn {
+      background-color: $ADE-color;
+    }
+  }
   // Banière
   .poste-banner {
     background-image: url("../../assets/imgs/hero-poste.jpg");
@@ -20,7 +34,6 @@
     &__info {
       display: flex;
       align-items: center;
-      color: $brand;
       font-size: 16px;
       @include media-breakpoint-up($lg) {
         font-size: 19px;
@@ -50,7 +63,6 @@
   .poste-description {
     h2 {
       font-family: "Causten-Bold";
-      color: $brand;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       margin: 50px 0 15px;
@@ -78,7 +90,6 @@
 
   // Formulaire de candidature
   .formulaire-candidature {
-    background-color: $brand;
     padding: 30px 0;
     @include media-breakpoint-up($lg) {
       max-width: 490px;
@@ -279,7 +290,6 @@
     }
     &__type {
       flex: 0 0 50%;
-      color: $brand;
       text-transform: uppercase;
       letter-spacing: 0.12em;
       font-size: 12px;
@@ -325,7 +335,6 @@
   // Ce poste vous intéresse
   .poste-interesse {
     display: none;
-    background-color: $brand;
     color: white;
     padding: 15px 0;
     position: fixed;

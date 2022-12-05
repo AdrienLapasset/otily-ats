@@ -1,4 +1,15 @@
 .accueil {
+  &--ADE {
+    .checkmark:after {
+      border: solid $ADE-color;
+    }
+    .offre__cta {
+      color: $ADE-color;
+    }
+    .g-btn {
+      background-color: $ADE-color;
+    }
+  }
   .hero-section {
     @include media-breakpoint-up($lg) {
       margin-top: 60px;
@@ -129,7 +140,6 @@
             top: 5px;
             width: 10px;
             height: 20px;
-            border: solid $brand;
             border-width: 0 3px 3px 0;
             -webkit-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
@@ -180,7 +190,6 @@
           }
         }
         &__cta {
-          color: $brand;
           font-size: 12px;
           font-family: "Causten-Bold";
           display: flex;
