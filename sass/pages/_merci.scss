@@ -5,7 +5,6 @@
   justify-content: center;
   h1 {
     font-size: 30px;
-    font-family: "Causten-ExtraBold";
     text-transform: uppercase;
     margin-bottom: 15px;
 
@@ -20,6 +19,29 @@
     font-family: "Causten-Bold";
     @include media-breakpoint-up($lg) {
       font-size: 19px;
+    }
+  }
+  &--ADE {
+    h1 {
+      font-family: "Causten-ExtraBold";
+    }
+    p {
+      font-family: "Causten-Bold";
+    }
+  }
+  &--ESP {
+    h1 {
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      color: $ESP-color;
+    }
+    p {
+      color: $ESP-color;
+      font-weight: 400;
+      line-height: 21px;
+    }
+    span {
+      background-color: $ESP-yellow;
     }
   }
 }

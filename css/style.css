@@ -952,7 +952,6 @@ button:focus {
 }
 .merci h1 {
   font-size: 30px;
-  font-family: "Causten-ExtraBold";
   text-transform: uppercase;
   margin-bottom: 15px;
 }
@@ -971,4 +970,23 @@ button:focus {
   .merci p {
     font-size: 19px;
   }
+}
+.merci--ADE h1 {
+  font-family: "Causten-ExtraBold";
+}
+.merci--ADE p {
+  font-family: "Causten-Bold";
+}
+.merci--ESP h1 {
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #28367f;
+}
+.merci--ESP p {
+  color: #28367f;
+  font-weight: 400;
+  line-height: 21px;
+}
+.merci--ESP span {
+  background-color: #fae100;
 }
