@@ -1009,6 +1009,46 @@ button:focus {
 .poste--ESP .carte-poste p {
   color: white;
 }
+.poste--ESD .poste-description h2,
+.poste--ESD .carte-poste__type {
+  color: #00c4b3;
+}
+.poste--ESD .formulaire-candidature,
+.poste--ESD .poste-interesse {
+  background-color: #00c4b3;
+}
+.poste--ESD .g-btn,
+.poste--ESD .formulaire-candidature__modal-btn {
+  color: rgb(24, 20, 52);
+  background-color: #fae100;
+}
+.poste--ESD .poste-banner {
+  background-image: url("../../assets/imgs/hero-ESD.jpg");
+  color: white;
+}
+.poste--ESD .poste-banner h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 55px;
+}
+.poste--ESD .poste-banner__info svg {
+  height: 17px;
+  margin-right: 10px;
+  fill: #fae100;
+}
+.poste--ESD .formulaire-candidature__modal-btn svg {
+  fill: rgb(24, 20, 52);
+  margin-right: 5px;
+}
+.poste--ESD .carte-poste {
+  background: #00c4b3;
+}
+.poste--ESD .carte-poste h3 {
+  color: #fae100;
+}
+.poste--ESD .carte-poste p {
+  color: white;
+}
 
 .merci {
   min-height: calc(100vh - 238px - 100px);
@@ -1054,5 +1094,18 @@ button:focus {
   line-height: 21px;
 }
 .merci--ESP span {
+  background-color: #fae100;
+}
+.merci--ESD h1 {
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: rgb(24, 20, 52);
+}
+.merci--ESD p {
+  color: rgb(24, 20, 52);
+  font-weight: 400;
+  line-height: 21px;
+}
+.merci--ESD span {
   background-color: #fae100;
 }

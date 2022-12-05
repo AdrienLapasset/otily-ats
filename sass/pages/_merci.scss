@@ -44,4 +44,19 @@
       background-color: $ESP-yellow;
     }
   }
+  &--ESD {
+    h1 {
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      color: $dark-blue;
+    }
+    p {
+      color: $dark-blue;
+      font-weight: 400;
+      line-height: 21px;
+    }
+    span {
+      background-color: $ESP-yellow;
+    }
+  }
 }

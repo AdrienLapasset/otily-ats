@@ -435,4 +435,52 @@
       }
     }
   }
+
+  // ESD
+  &--ESD {
+    .poste-description h2,
+    .carte-poste__type {
+      color: $ESD-color;
+    }
+    .formulaire-candidature,
+    .poste-interesse {
+      background-color: $ESD-color;
+    }
+    .g-btn,
+    .formulaire-candidature__modal-btn {
+      color: rgba(24, 20, 52, 1);
+      background-color: $ESP-yellow;
+    }
+    .poste-banner {
+      background-image: url("../../assets/imgs/hero-ESD.jpg");
+      color: white;
+      h1 {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 55px;
+      }
+      &__info {
+        svg {
+          height: 17px;
+          margin-right: 10px;
+          fill: $ESP-yellow;
+        }
+      }
+    }
+    .formulaire-candidature__modal-btn {
+      svg {
+        fill: $dark-blue;
+        margin-right: 5px;
+      }
+    }
+    .carte-poste {
+      background: $ESD-color;
+      h3 {
+        color: $ESP-yellow;
+      }
+      p {
+        color: white;
+      }
+    }
+  }
 }
