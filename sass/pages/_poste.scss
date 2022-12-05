@@ -419,10 +419,15 @@
         }
       }
     }
-    .formulaire-candidature__modal-btn {
-      svg {
-        fill: $ESP-color;
-        margin-right: 5px;
+    .formulaire-candidature {
+      &__modal-btn {
+        svg {
+          fill: $ESP-color;
+          margin-right: 5px;
+        }
+      }
+      &__hint {
+        color: white;
       }
     }
     .carte-poste {

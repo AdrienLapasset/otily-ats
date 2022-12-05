@@ -1000,6 +1000,9 @@ button:focus {
   fill: #28367f;
   margin-right: 5px;
 }
+.poste--ESP .formulaire-candidature__hint {
+  color: white;
+}
 .poste--ESP .carte-poste {
   background: #28367f;
 }
