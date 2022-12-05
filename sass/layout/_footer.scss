@@ -47,4 +47,11 @@
       color: white;
     }
   }
+  &--ESD {
+    background-color: $ESD-color;
+    a,
+    p {
+      color: white;
+    }
+  }
 }

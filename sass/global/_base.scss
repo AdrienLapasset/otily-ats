@@ -36,7 +36,8 @@ body {
   @include media-breakpoint-up($md) {
     font-size: 18px;
   }
-  &.ESP {
+  &.ESP,
+  &.ESD {
     font-family: "Barlow", sans-serif;
   }
 }

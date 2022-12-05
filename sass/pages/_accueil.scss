@@ -288,4 +288,64 @@
       }
     }
   }
+
+  // ESD
+  &--ESD {
+    .hero-section {
+      background-image: url("../../assets/imgs/hero-ESP.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      @include media-breakpoint-up($lg) {
+        padding: 60px 0;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 36px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        margin-bottom: 40px;
+        @include media-breakpoint-up($lg) {
+          font-size: 60px;
+          line-height: 70px;
+        }
+      }
+      &__description {
+        margin-bottom: 50px;
+        p {
+          font-size: 19px;
+          line-height: 23px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .g-btn {
+      font-family: "Barlow", sans-serif;
+    }
+    .nos-offres {
+      h2 {
+        font-family: "Barlow", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 0.2em;
+      }
+      .checkmark:after {
+        border: solid $ESD-color;
+      }
+      .offre {
+        &__cta {
+          font-weight: 700;
+          letter-spacing: 0.2em;
+          background-color: $ESP-yellow;
+          padding: 15px 30px;
+        }
+        &__info svg {
+          fill: $ESD-color;
+        }
+      }
+    }
+  }
 }
