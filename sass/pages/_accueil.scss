@@ -1,70 +1,6 @@
 .accueil {
-  &--ADE {
-    .checkmark:after {
-      border: solid $ADE-color;
-    }
-    .g-btn {
-      background-color: $ADE-color;
-    }
-    .offre {
-      &__cta {
-        color: $ADE-color;
-      }
-      &__info svg {
-        fill: $ADE-color;
-      }
-    }
-  }
-  .hero-section {
-    @include media-breakpoint-up($lg) {
-      margin-top: 60px;
-    }
-    h1 {
-      font-family: "Causten-ExtraBold";
-      font-size: 40px;
-      line-height: 36px;
-      @include media-breakpoint-up($lg) {
-        line-height: 75px;
-        font-size: 80px;
-      }
-    }
-    &__img {
-      &--desktop {
-        display: none;
-        @include media-breakpoint-up($lg) {
-          display: block;
-        }
-      }
-      &--mobile {
-        max-width: 100%;
-        margin-top: -40px;
-        @include media-breakpoint-up($lg) {
-          display: none;
-        }
-      }
-    }
-    &__description {
-      background-color: $grey;
-      color: white;
-      margin-top: 60px;
-      padding-bottom: 40px;
-      @include media-breakpoint-up($lg) {
-        padding: 55px 0 85px;
-        margin-top: -200px;
-      }
-      p {
-        margin-top: 30px;
-        margin-bottom: 0px;
-        @include media-breakpoint-up($lg) {
-          margin-top: 0;
-          margin-bottom: 40px;
-        }
-      }
-    }
-  }
   .nos-offres {
     h2 {
-      font-family: "Causten-ExtraBold";
       text-transform: uppercase;
       margin: 30px 0;
       text-align: center;
@@ -163,7 +99,6 @@
           margin-bottom: 60px;
         }
         h3 {
-          font-family: "Causten-Bold";
           margin-bottom: 20px;
           font-size: 20px;
           @include media-breakpoint-up($lg) {
@@ -209,6 +144,136 @@
               width: unset;
             }
           }
+        }
+      }
+    }
+  }
+
+  // Déclinaisons
+  &--ADE {
+    .checkmark:after {
+      border: solid $ADE-color;
+    }
+    .g-btn {
+      background-color: $ADE-color;
+    }
+    .offre {
+      &__cta {
+        color: $ADE-color;
+      }
+      &__info svg {
+        fill: $ADE-color;
+      }
+    }
+    .hero-section {
+      @include media-breakpoint-up($lg) {
+        margin-top: 60px;
+      }
+      h1 {
+        font-family: "Causten-ExtraBold";
+        font-size: 40px;
+        line-height: 36px;
+        @include media-breakpoint-up($lg) {
+          line-height: 75px;
+          font-size: 80px;
+        }
+      }
+      &__img {
+        &--desktop {
+          display: none;
+          @include media-breakpoint-up($lg) {
+            display: block;
+          }
+        }
+        &--mobile {
+          max-width: 100%;
+          margin-top: -40px;
+          @include media-breakpoint-up($lg) {
+            display: none;
+          }
+        }
+      }
+      &__description {
+        background-color: $grey;
+        color: white;
+        margin-top: 60px;
+        padding-bottom: 40px;
+        @include media-breakpoint-up($lg) {
+          padding: 55px 0 85px;
+          margin-top: -200px;
+        }
+        p {
+          margin-top: 30px;
+          margin-bottom: 0px;
+          @include media-breakpoint-up($lg) {
+            margin-top: 0;
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+    .nos-offres {
+      h2 {
+        font-family: "Causten-ExtraBold";
+      }
+      &__liste {
+        h3 {
+          font-family: "Causten-Bold";
+        }
+      }
+    }
+  }
+  &--ESP {
+    .hero-section {
+      background-image: url("../../assets/imgs/hero-ESD.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      @include media-breakpoint-up($lg) {
+        padding: 60px 0;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 36px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        margin-bottom: 40px;
+        @include media-breakpoint-up($lg) {
+          font-size: 60px;
+          line-height: 70px;
+        }
+      }
+      &__description {
+        margin-bottom: 50px;
+        p {
+          font-size: 19px;
+          line-height: 23px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .g-btn {
+      font-family: "Barlow", sans-serif;
+    }
+    .nos-offres {
+      h2 {
+        font-family: "Barlow", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 0.2em;
+      }
+      .checkmark:after {
+        border: solid $ESP-color;
+      }
+      .offre {
+        &__cta {
+          color: $ESP-color;
+        }
+        &__info svg {
+          fill: $ESP-color;
         }
       }
     }

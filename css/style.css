@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://use.typekit.net/puq2idw.css");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap");
 @font-face {
   font-family: "Causten-ExtraBold";
   src: url("../../assets/fonts/Causten/Causten-ExtraBold.otf") format("opentype");
@@ -37,6 +38,9 @@ body {
   body {
     font-size: 18px;
   }
+}
+body.ESP {
+  font-family: "Barlow", sans-serif;
 }
 
 h3 {
@@ -113,6 +117,9 @@ button:focus {
 .g-btn--grey {
   background-color: #32373c;
 }
+.g-btn--transparent {
+  border: 1px solid white;
+}
 
 .header {
   height: 80px;
@@ -131,6 +138,9 @@ button:focus {
   .header__logo {
     height: 40px;
   }
+}
+.header--ESP {
+  background-color: #28367f;
 }
 
 footer {
@@ -185,75 +195,7 @@ footer .footer-content p {
   }
 }
 
-.accueil--ADE .checkmark:after {
-  border: solid #0dad8d;
-}
-.accueil--ADE .g-btn {
-  background-color: #0dad8d;
-}
-.accueil--ADE .offre__cta {
-  color: #0dad8d;
-}
-.accueil--ADE .offre__info svg {
-  fill: #0dad8d;
-}
-@media (min-width: 992px) {
-  .accueil .hero-section {
-    margin-top: 60px;
-  }
-}
-.accueil .hero-section h1 {
-  font-family: "Causten-ExtraBold";
-  font-size: 40px;
-  line-height: 36px;
-}
-@media (min-width: 992px) {
-  .accueil .hero-section h1 {
-    line-height: 75px;
-    font-size: 80px;
-  }
-}
-.accueil .hero-section__img--desktop {
-  display: none;
-}
-@media (min-width: 992px) {
-  .accueil .hero-section__img--desktop {
-    display: block;
-  }
-}
-.accueil .hero-section__img--mobile {
-  max-width: 100%;
-  margin-top: -40px;
-}
-@media (min-width: 992px) {
-  .accueil .hero-section__img--mobile {
-    display: none;
-  }
-}
-.accueil .hero-section__description {
-  background-color: #32373c;
-  color: white;
-  margin-top: 60px;
-  padding-bottom: 40px;
-}
-@media (min-width: 992px) {
-  .accueil .hero-section__description {
-    padding: 55px 0 85px;
-    margin-top: -200px;
-  }
-}
-.accueil .hero-section__description p {
-  margin-top: 30px;
-  margin-bottom: 0px;
-}
-@media (min-width: 992px) {
-  .accueil .hero-section__description p {
-    margin-top: 0;
-    margin-bottom: 40px;
-  }
-}
 .accueil .nos-offres h2 {
-  font-family: "Causten-ExtraBold";
   text-transform: uppercase;
   margin: 30px 0;
   text-align: center;
@@ -364,7 +306,6 @@ footer .footer-content p {
   }
 }
 .accueil .nos-offres__liste .offre h3 {
-  font-family: "Causten-Bold";
   margin-bottom: 20px;
   font-size: 20px;
 }
@@ -422,6 +363,132 @@ footer .footer-content p {
   .accueil .nos-offres__liste .offre__cta img {
     width: unset;
   }
+}
+.accueil--ADE .checkmark:after {
+  border: solid #0dad8d;
+}
+.accueil--ADE .g-btn {
+  background-color: #0dad8d;
+}
+.accueil--ADE .offre__cta {
+  color: #0dad8d;
+}
+.accueil--ADE .offre__info svg {
+  fill: #0dad8d;
+}
+@media (min-width: 992px) {
+  .accueil--ADE .hero-section {
+    margin-top: 60px;
+  }
+}
+.accueil--ADE .hero-section h1 {
+  font-family: "Causten-ExtraBold";
+  font-size: 40px;
+  line-height: 36px;
+}
+@media (min-width: 992px) {
+  .accueil--ADE .hero-section h1 {
+    line-height: 75px;
+    font-size: 80px;
+  }
+}
+.accueil--ADE .hero-section__img--desktop {
+  display: none;
+}
+@media (min-width: 992px) {
+  .accueil--ADE .hero-section__img--desktop {
+    display: block;
+  }
+}
+.accueil--ADE .hero-section__img--mobile {
+  max-width: 100%;
+  margin-top: -40px;
+}
+@media (min-width: 992px) {
+  .accueil--ADE .hero-section__img--mobile {
+    display: none;
+  }
+}
+.accueil--ADE .hero-section__description {
+  background-color: #32373c;
+  color: white;
+  margin-top: 60px;
+  padding-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .accueil--ADE .hero-section__description {
+    padding: 55px 0 85px;
+    margin-top: -200px;
+  }
+}
+.accueil--ADE .hero-section__description p {
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+@media (min-width: 992px) {
+  .accueil--ADE .hero-section__description p {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
+.accueil--ADE .nos-offres h2 {
+  font-family: "Causten-ExtraBold";
+}
+.accueil--ADE .nos-offres__liste h3 {
+  font-family: "Causten-Bold";
+}
+.accueil--ESP .hero-section {
+  background-image: url("../../assets/imgs/hero-ESD.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .accueil--ESP .hero-section {
+    padding: 60px 0;
+  }
+}
+.accueil--ESP .hero-section h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 36px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .accueil--ESP .hero-section h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+.accueil--ESP .hero-section__description {
+  margin-bottom: 50px;
+}
+.accueil--ESP .hero-section__description p {
+  font-size: 19px;
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+.accueil--ESP .g-btn {
+  font-family: "Barlow", sans-serif;
+}
+.accueil--ESP .nos-offres h2 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 0.2em;
+}
+.accueil--ESP .nos-offres .checkmark:after {
+  border: solid #28367f;
+}
+.accueil--ESP .nos-offres .offre__cta {
+  color: #28367f;
+}
+.accueil--ESP .nos-offres .offre__info svg {
+  fill: #28367f;
 }
 
 .poste--ADE .poste-banner__info,

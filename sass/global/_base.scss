@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap");
 @font-face {
   font-family: "Causten-ExtraBold";
   src: url("../../assets/fonts/Causten/Causten-ExtraBold.otf")
@@ -34,6 +35,9 @@ body {
   overflow-x: hidden;
   @include media-breakpoint-up($md) {
     font-size: 18px;
+  }
+  &.ESP {
+    font-family: "Barlow", sans-serif;
   }
 }
 

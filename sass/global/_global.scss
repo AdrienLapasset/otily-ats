@@ -25,4 +25,7 @@
   &--grey {
     background-color: $grey;
   }
+  &--transparent {
+    border: 1px solid white;
+  }
 }
