@@ -28,4 +28,11 @@
   &--transparent {
     border: 1px solid white;
   }
+  &--icon {
+    color: $ESP-color;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    background-color: $ESP-yellow;
+    padding: 15px 30px;
+  }
 }

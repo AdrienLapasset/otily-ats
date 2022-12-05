@@ -1,18 +1,4 @@
 .poste {
-  &--ADE {
-    .poste-banner__info,
-    .poste-description h2,
-    .carte-poste__type {
-      color: $ADE-color;
-    }
-    .formulaire-candidature,
-    .poste-interesse {
-      background-color: $ADE-color;
-    }
-    .g-btn {
-      background-color: $ADE-color;
-    }
-  }
   // Banière
   .poste-banner {
     background-image: url("../../assets/imgs/hero-poste.jpg");
@@ -23,7 +9,7 @@
       padding: 50px 0;
     }
     h1 {
-      font-family: "Causten-ExtraBold";
+      font-weight: 800;
       font-size: 34px;
       color: white;
       @include media-breakpoint-up($lg) {
@@ -62,7 +48,7 @@
   // Description du poste
   .poste-description {
     h2 {
-      font-family: "Causten-Bold";
+      font-weight: 700;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       margin: 50px 0 15px;
@@ -107,7 +93,7 @@
       padding: 60px 190px 60px 70px;
     }
     h2 {
-      font-family: "Causten-Bold";
+      font-weight: 700;
       color: white;
       text-transform: uppercase;
       margin-bottom: 20px;
@@ -143,9 +129,9 @@
       font-size: 12px;
       color: #999999;
       text-transform: uppercase;
-      font-family: "Causten-Bold";
       letter-spacing: 0.15em;
       opacity: 1;
+      font-weight: 700;
     }
     input {
       @extend .formulaire-candidature__input;
@@ -229,11 +215,11 @@
       }
     }
     &__modal-btn {
+      font-weight: 700;
       margin-left: 10px;
       flex: 0 0 81px;
       background: #32373c;
       font-size: 11px;
-      font-family: "Causten-Bold";
       color: white;
       padding: 5px;
       text-transform: uppercase;
@@ -259,7 +245,7 @@
             margin-right: 20px;
           }
           h3 {
-            font-family: "Causten-Bold";
+            font-weight: 700;
             font-size: 22px;
             margin-bottom: 5px;
           }
@@ -296,7 +282,6 @@
       padding-right: 15px;
       @include media-breakpoint-up($lg) {
         flex: 0 0 200px;
-        font-family: "Causten-Bold";
         font-size: 16px;
       }
     }
@@ -351,6 +336,102 @@
       font-size: 15px;
       @include media-breakpoint-up($lg) {
         font-size: 22px;
+      }
+    }
+  }
+
+  // Déclinaisons
+
+  // ADE
+  &--ADE {
+    .poste-banner__info,
+    .poste-description h2,
+    .carte-poste__type {
+      color: $ADE-color;
+    }
+    .formulaire-candidature,
+    .poste-interesse {
+      background-color: $ADE-color;
+    }
+    .g-btn {
+      background-color: $ADE-color;
+    }
+    .poste-banner {
+      h1 {
+        font-family: "Causten-ExtraBold";
+      }
+    }
+    .poste-description {
+      h2 {
+        font-family: "Causten-Bold";
+      }
+    }
+    .formulaire-candidature {
+      h2 {
+        font-family: "Causten-Bold";
+      }
+      &__placeholder {
+        font-family: "Causten-Bold";
+      }
+      &__modal-btn {
+        margin-left: 10px;
+        font-family: "Causten-Bold";
+      }
+    }
+    &__rappel-modal {
+      h3 {
+        font-family: "Causten-Bold";
+      }
+    }
+    .carte-poste__type {
+      font-family: "Causten-Bold";
+    }
+  }
+
+  // ESP
+  &--ESP {
+    .poste-description h2,
+    .carte-poste__type {
+      color: $ESP-color;
+    }
+    .formulaire-candidature,
+    .poste-interesse {
+      background-color: $ESP-color;
+    }
+    .g-btn,
+    .formulaire-candidature__modal-btn {
+      color: $ESP-color;
+      background-color: $ESP-yellow;
+    }
+    .poste-banner {
+      background-image: url("../../assets/imgs/hero-ESD.jpg");
+      color: white;
+      h1 {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 55px;
+      }
+      &__info {
+        svg {
+          height: 17px;
+          margin-right: 10px;
+          fill: $ESP-yellow;
+        }
+      }
+    }
+    .formulaire-candidature__modal-btn {
+      svg {
+        fill: $ESP-color;
+        margin-right: 5px;
+      }
+    }
+    .carte-poste {
+      background: $ESP-color;
+      h3 {
+        color: $ESP-yellow;
+      }
+      p {
+        color: white;
       }
     }
   }
