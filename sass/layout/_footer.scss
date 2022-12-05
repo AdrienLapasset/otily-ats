@@ -1,4 +1,4 @@
-footer {
+.footer {
   background-color: $grey-dark;
   padding: 40px 0;
   @include media-breakpoint-up($lg) {
@@ -22,8 +22,6 @@ footer {
     a,
     p {
       font-size: 16px;
-      font-family: "Causten-Medium", sans-serif;
-      color: rgba(255, 255, 255, 0.5);
       &:not(:last-child) {
         margin-bottom: 12px;
         @include media-breakpoint-up($lg) {
@@ -33,6 +31,20 @@ footer {
       @include media-breakpoint-up($lg) {
         margin-right: 80px;
       }
+    }
+  }
+  &--ADE {
+    a,
+    p {
+      font-family: "Causten-Medium", sans-serif;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+  &--ESP {
+    background-color: $ESP-color;
+    a,
+    p {
+      color: white;
     }
   }
 }

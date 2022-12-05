@@ -143,56 +143,66 @@ button:focus {
   background-color: #28367f;
 }
 
-footer {
+.footer {
   background-color: #151515;
   padding: 40px 0;
 }
 @media (min-width: 992px) {
-  footer {
+  .footer {
     padding: 100px 0;
   }
 }
-footer .footer-content {
+.footer .footer-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 @media (min-width: 992px) {
-  footer .footer-content {
+  .footer .footer-content {
     align-items: center;
     flex-direction: row;
   }
 }
-footer .footer-content > img {
+.footer .footer-content > img {
   margin-bottom: 30px;
 }
 @media (min-width: 992px) {
-  footer .footer-content > img {
+  .footer .footer-content > img {
     margin-right: 80px;
     margin-bottom: 0px;
   }
 }
-footer .footer-content a,
-footer .footer-content p {
+.footer .footer-content a,
+.footer .footer-content p {
   font-size: 16px;
-  font-family: "Causten-Medium", sans-serif;
-  color: rgba(255, 255, 255, 0.5);
 }
-footer .footer-content a:not(:last-child),
-footer .footer-content p:not(:last-child) {
+.footer .footer-content a:not(:last-child),
+.footer .footer-content p:not(:last-child) {
   margin-bottom: 12px;
 }
 @media (min-width: 992px) {
-  footer .footer-content a:not(:last-child),
-footer .footer-content p:not(:last-child) {
+  .footer .footer-content a:not(:last-child),
+.footer .footer-content p:not(:last-child) {
     margin-bottom: 0;
   }
 }
 @media (min-width: 992px) {
-  footer .footer-content a,
-footer .footer-content p {
+  .footer .footer-content a,
+.footer .footer-content p {
     margin-right: 80px;
   }
+}
+.footer--ADE a,
+.footer--ADE p {
+  font-family: "Causten-Medium", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer--ESP {
+  background-color: #28367f;
+}
+.footer--ESP a,
+.footer--ESP p {
+  color: white;
 }
 
 .accueil .nos-offres h2 {
@@ -346,7 +356,6 @@ footer .footer-content p {
 }
 .accueil .nos-offres__liste .offre__cta {
   font-size: 12px;
-  font-family: "Causten-Bold";
   display: flex;
   align-items: center;
 }
@@ -437,6 +446,9 @@ footer .footer-content p {
 .accueil--ADE .nos-offres__liste h3 {
   font-family: "Causten-Bold";
 }
+.accueil--ADE .offre__cta {
+  font-family: "Causten-Bold";
+}
 .accueil--ESP .hero-section {
   background-image: url("../../assets/imgs/hero-ESD.jpg");
   background-size: cover;
@@ -486,6 +498,10 @@ footer .footer-content p {
 }
 .accueil--ESP .nos-offres .offre__cta {
   color: #28367f;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  background-color: #fae100;
+  padding: 15px 30px;
 }
 .accueil--ESP .nos-offres .offre__info svg {
   fill: #28367f;

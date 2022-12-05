@@ -131,7 +131,6 @@
         }
         &__cta {
           font-size: 12px;
-          font-family: "Causten-Bold";
           display: flex;
           align-items: center;
           @include media-breakpoint-up($lg) {
@@ -150,6 +149,8 @@
   }
 
   // Déclinaisons
+
+  // ADE
   &--ADE {
     .checkmark:after {
       border: solid $ADE-color;
@@ -222,7 +223,12 @@
         }
       }
     }
+    .offre__cta {
+      font-family: "Causten-Bold";
+    }
   }
+
+  // ESP
   &--ESP {
     .hero-section {
       background-image: url("../../assets/imgs/hero-ESD.jpg");
@@ -271,6 +277,10 @@
       .offre {
         &__cta {
           color: $ESP-color;
+          font-weight: 700;
+          letter-spacing: 0.2em;
+          background-color: $ESP-yellow;
+          padding: 15px 30px;
         }
         &__info svg {
           fill: $ESP-color;
