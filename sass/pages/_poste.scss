@@ -52,7 +52,7 @@
       letter-spacing: 0.1em;
       text-transform: uppercase;
       margin: 50px 0 15px;
-      font-size: 16px;
+      font-size: 18px;
       @include media-breakpoint-up($lg) {
         font-size: 22px;
       }
@@ -61,7 +61,7 @@
     ul {
       color: #555555;
       margin-bottom: 15px;
-      font-size: 12px;
+      font-size: 14px;
       @include media-breakpoint-up($lg) {
         font-size: 16px;
       }
@@ -407,8 +407,6 @@
       color: white;
       h1 {
         font-weight: 700;
-        font-size: 50px;
-        line-height: 55px;
       }
       &__info {
         svg {
@@ -460,8 +458,6 @@
       color: white;
       h1 {
         font-weight: 700;
-        font-size: 50px;
-        line-height: 55px;
       }
       &__info {
         svg {
