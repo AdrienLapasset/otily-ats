@@ -907,6 +907,7 @@ button:focus {
   }
 }
 .poste .poste-interesse {
+  box-shadow: 5px 5px 15px 5px black;
   display: none;
   color: white;
   padding: 15px 0;
